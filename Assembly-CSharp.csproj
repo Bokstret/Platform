@@ -63,14 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\scripts\Buttons.cs" />
+    <Compile Include="Assets\scripts\ButtonsChoose.cs" />
+    <Compile Include="Assets\scripts\ButtonsLevel.cs" />
+    <Compile Include="Assets\scripts\ButtonsMenu.cs" />
+    <Compile Include="Assets\scripts\CameraDrag.cs" />
+    <Compile Include="Assets\scripts\ChooseLevel.cs" />
     <Compile Include="Assets\scripts\Fight2D.cs" />
     <Compile Include="Assets\scripts\GameInitializer.cs" />
     <Compile Include="Assets\scripts\HeroController.cs" />
     <Compile Include="Assets\scripts\HP.cs" />
-    <Compile Include="Assets\scripts\LoadLevel.cs" />
     <Compile Include="Assets\scripts\ScreenUtils.cs" />
-    <Compile Include="Assets\scripts\Vibration.cs" />
     <None Include="Assets\Gothicvania Cemetery Artwork\about.txt" />
     <None Include="Assets\UnityAds\link.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
