@@ -16,10 +16,9 @@ public class ButtonsLevel : MonoBehaviour
     GameObject resume;
     GameObject next;
     Text sure;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    void Start()
+    { 
         HUD = GameObject.Find("HUD");
         yes = GameObject.Find("Yes");
         no = GameObject.Find("No");
@@ -38,6 +37,8 @@ public class ButtonsLevel : MonoBehaviour
         pause.SetActive(false);
         resume.SetActive(false);
         next.SetActive(false);
+
+       
     }
 
     public void PausePressed()

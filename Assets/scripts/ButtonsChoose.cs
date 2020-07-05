@@ -12,7 +12,7 @@ public class ButtonsChoose : MonoBehaviour
     {
         back = GameObject.Find("Back");
     }
-    // Start is called before the first frame update
+
     public void BackPressed()
     {
         SceneManager.LoadScene(0);

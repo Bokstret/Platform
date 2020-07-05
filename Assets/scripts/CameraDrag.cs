@@ -1,19 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraDrag : MonoBehaviour
 {
-
     public GameObject camera_GameObject;
-
     Vector2 StartPosition;
     Vector2 DragStartPosition;
     Vector2 DragNewPosition;
     Vector2 Finger0Position;
     float DistanceBetweenFingers;
 
-    // Update is called once per frame
     void Update()
     {
        

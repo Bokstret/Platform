@@ -75,9 +75,10 @@ GameObject:
   - component: {fileID: 1970065769194958511}
   - component: {fileID: 1498302310}
   - component: {fileID: 1498302311}
+  - component: {fileID: 1513335875}
   m_Layer: 10
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +92,7 @@ Transform:
   m_GameObject: {fileID: 8647835109758580286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.028707, y: -2.037207, z: 0}
-  m_LocalScale: {x: 4.62963, y: 4.62963, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 960022575}
   - {fileID: 500280379408248061}
@@ -112,6 +113,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -123,6 +125,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -247,3 +250,16 @@ MonoBehaviour:
     m_Bits: 256
   attack: {fileID: 500280379408248061}
   attackRadius: 0.15
+--- !u!114 &1513335875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8647835109758580286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bb1df8dd30f4a4d9777fe1668986f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 15

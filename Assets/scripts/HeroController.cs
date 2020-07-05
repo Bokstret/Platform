@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class HeroController : MonoBehaviour
 {
+    static Timer timer;
     private int maxSpeed = 7;
     private int move;
     public int playerSpeed;
@@ -11,13 +11,18 @@ public class HeroController : MonoBehaviour
     private float groundRadius = 0.2f;
     public LayerMask whatIsGround;
     private bool isFacingRight = true;
-    private Animator anim;
     public Transform attack;
     public float attackRadius;
+    private Animator anim;
+    private static BoxCollider2D coll;
+    public static bool invulnerability = false;
 
 
     private void Start()
     {
+        timer = gameObject.AddComponent<Timer>();
+        timer.Duration = 2;
+        coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -28,7 +33,6 @@ public class HeroController : MonoBehaviour
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(move));
         GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
-
         if (move > 0 && !isFacingRight)
         {
             Flip();
@@ -37,6 +41,11 @@ public class HeroController : MonoBehaviour
         else if (move < 0 && isFacingRight)
         {
             Flip();
+        }
+
+        if (timer.Finished)
+        {
+            InvulnerabilityOff();
         }
     }
 
@@ -48,9 +57,7 @@ public class HeroController : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 650), ForceMode2D.Force);
             anim.SetBool("IsGrounded", false);
             Invoke("ToIdle", 0.05f);
-        }
-        
-        
+        }   
     }
 
     public void Move(int InputAxis)
@@ -60,14 +67,35 @@ public class HeroController : MonoBehaviour
 
     public void Attack()
     {
-        if (anim.GetBool("IsAttack") == false )
+        if (anim.GetBool("IsAttack") == false & anim.GetBool("IsGrounded") == false)
+        {
+            anim.SetBool("IsAttack", true);
+            Fight2D.Action(attack.position, attackRadius, 9, 5);
+            anim.Play("Attack");
+            Invoke("NoAttack", 5);
+        }
 
+        else
         {
             anim.SetBool("IsAttack", true);
             Fight2D.Action(attack.position, attackRadius, 9, 5);
             anim.Play("Attack");
             Invoke("NoAttack", 0.07f);
         }
+
+        
+    }
+    public static void InvulnerabilityOn()
+    {
+        Physics2D.IgnoreLayerCollision(9, 10, true);
+        invulnerability = true;
+        timer.Run();
+    }
+
+    public static void InvulnerabilityOff()
+    {
+        Physics2D.IgnoreLayerCollision(9, 10, false);
+        invulnerability = false;
     }
 
     private void NoAttack()

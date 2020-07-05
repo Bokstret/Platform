@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Provides screen utilities
-/// </summary>
 public static class ScreenUtils
 {
 	static float screenLeft;
