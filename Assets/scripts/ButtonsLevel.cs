@@ -62,7 +62,7 @@ public class ButtonsLevel : MonoBehaviour
 
     public void RestartPressed()
     {
-        //todo reload CurrentScene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void ExitPressed()
@@ -77,7 +77,7 @@ public class ButtonsLevel : MonoBehaviour
 
     public void YesPressed()
     {
-        //todo load MenuScene
+        SceneManager.LoadScene(0);
     }
 
     public void NoPressed()

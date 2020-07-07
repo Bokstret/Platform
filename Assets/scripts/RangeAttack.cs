@@ -10,7 +10,7 @@ public class RangeAttack : MonoBehaviour
     Vector2 thrustDirection;
     float xEnemy;
     float yEnemy;
-    const float ThrustForce = 8;
+    const float ThrustForce = 6;
 
     void Start()
     {
@@ -24,7 +24,15 @@ public class RangeAttack : MonoBehaviour
     {
         if (timer.Finished)
         {
-            thrustDirection = new Vector2(hero.transform.position.x, hero.transform.position.y + 2.5f);
+            if (hero.transform.position.x < transform.position.x)
+            {
+                thrustDirection = new Vector2(hero.transform.position.x - 3, hero.transform.position.y + 1);
+            }
+            else
+            {
+                thrustDirection = new Vector2(hero.transform.position.x + 3, hero.transform.position.y + 1);
+            }
+            
             xEnemy = gameObject.transform.position.x;
             yEnemy = gameObject.transform.position.y;
             Vector3 location = new Vector3(xEnemy, yEnemy, 0);

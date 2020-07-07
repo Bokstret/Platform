@@ -3,20 +3,20 @@
 public class Magic : MonoBehaviour
 {
     GameObject hero;
-    Timer timer;
+    Timer magicAlive;
     const int alive = 5;
 
     void Start()
     {
         hero = GameObject.Find("Hero");
-        timer = gameObject.AddComponent<Timer>();
-        timer.Duration = alive;
-        timer.Run();
+        magicAlive = gameObject.AddComponent<Timer>();
+        magicAlive.Duration = alive;
+        magicAlive.Run();
     }
 
     void Update()
     {
-        if (timer.Finished)
+            if (magicAlive.Finished)
         {
 
             GameObject magic = GameObject.FindWithTag("Magic");
@@ -25,7 +25,7 @@ public class Magic : MonoBehaviour
                 Destroy(magic);
             }
 
-            timer.Run();
+            magicAlive.Run();
         }
     }
 

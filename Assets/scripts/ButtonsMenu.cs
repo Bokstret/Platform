@@ -22,13 +22,13 @@ public class ButtonsMenu: MonoBehaviour
 
         if (PlayerPrefs.GetInt("SoundOn") == 0)
         {
-            audio.enabled = false;
+            audio.volume = 0;
             soundOn.SetActive(true);
             soundOff.SetActive(false);
         }
         else
         {
-            audio.enabled = true;
+            audio.volume = 1;
             soundOn.SetActive(false);
             soundOff.SetActive(true);
         }
@@ -44,7 +44,7 @@ public class ButtonsMenu: MonoBehaviour
     {
         soundOn.SetActive(true);
         soundOff.SetActive(false);
-        audio.enabled = false;
+        audio.volume = 0;
         PlayerPrefs.SetInt("SoundOn", 0);
     }
 
@@ -52,7 +52,7 @@ public class ButtonsMenu: MonoBehaviour
     {
         soundOn.SetActive(false);
         soundOff.SetActive(true);
-        audio.enabled = true;
+        audio.volume = 1;
         PlayerPrefs.SetInt("SoundOn", 1);
     }
 }
