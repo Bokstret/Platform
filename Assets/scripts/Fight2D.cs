@@ -1,9 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Security.Cryptography;
+using UnityEngine;
 
 public class Fight2D : MonoBehaviour
-{
-	static GameObject NearTarget(Vector3 position, Collider2D[] array)
+{ 
+
+    static GameObject NearTarget(Vector3 position, Collider2D[] array)
 	{
 		Collider2D current = null;
 		float dist = Mathf.Infinity;
@@ -27,13 +28,47 @@ public class Fight2D : MonoBehaviour
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(point, radius, 1 << layerMask);
 
 		GameObject obj = NearTarget(point, colliders);
-		if (obj != null && obj.GetComponent<HP>())
+		if (obj != null && obj.GetComponent<HP>().enabled == true)
 		{
-			obj.GetComponent<HP>().health -= damage;
+			if(obj.GetComponent<HP>().health > 0)
+            {
+				obj.GetComponent<HP>().health -= damage;
+			}
+
 			if (obj.GetComponent<HP>().health <= 0)
             {
-				Destroy(obj);
+				if (obj.GetComponent<EnemiesAppear>() != null)
+				{
+					Destroy(obj.GetComponent<EnemiesAppear>());
+				}
+				obj.GetComponent<HP>().enabled = false;
+				obj.GetComponent<Animator>().SetTrigger("Die");
+				Destroy(obj.GetComponent<EnemiesMovement>());
+				BoxCollider2D coll = obj.GetComponent<BoxCollider2D>();
+				if (obj.name != "hell gato")
+                {
+					if(obj.name == "skeleton clothed" | obj.name == "skeleton")
+                    {
+						coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 3);
+					}
+
+					if(obj.name == "skeleton shield")
+                    {
+						coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 1.2f);
+						print(2);
+					}
+
+                    else
+                    {
+						coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 1.5f);
+					}
+					Destroy(obj, 1.5f);
+
+				}
+				
             }
 	    }
 	}
+
+
 }

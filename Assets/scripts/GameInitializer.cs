@@ -22,7 +22,7 @@ public class GameInitializer : MonoBehaviour
         {
             if (obj.layer != 5)
             {
-                obj.transform.localScale = new Vector3(koef, koef, 1);
+                obj.transform.localScale = new Vector3(obj.transform.localScale.x * koef, obj.transform.localScale.y * koef, 1);
             }
         }
         BG.transform.localScale = new Vector3(koef + 0.5f, koef + 0.5f, 1);

@@ -19,7 +19,7 @@ public class HeroController : MonoBehaviour
     public static bool invulnerability = false;
 
 
-    private void Start()
+    void Start()
     {
         resetAnim = gameObject.AddComponent<Timer>();
         resetAnim.Duration = 0.5f;
@@ -29,7 +29,7 @@ public class HeroController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("IsGrounded", isGrounded);

@@ -11,7 +11,7 @@ public class EnemiesAppear : MonoBehaviour
     {
         timer = gameObject.AddComponent<Timer>();
         timer.Duration = 0.8f;
-        anim = GetComponent<Animator>();        
+        anim = GetComponent<Animator>(); 
     }
 
     void Update()

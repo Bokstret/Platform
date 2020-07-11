@@ -39,6 +39,8 @@ public class EnemiesMovement : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Hero") & HeroController.invulnerability == false)
         {
+            anim.SetBool("Attacking", true);
+            Invoke("ToIdle", 0.6f);
             hero.GetComponent<HP>().health -= 5;
             if (hero.GetComponent<HP>().health == 0)
             {
@@ -47,6 +49,9 @@ public class EnemiesMovement : MonoBehaviour
             }
             HeroController.InvulnerabilityOn();
         }
-
+    }
+    private void ToIdle()
+    {
+        anim.SetBool("Attacking", false);
     }
 }

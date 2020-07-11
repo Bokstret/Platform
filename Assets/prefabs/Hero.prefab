@@ -8,15 +8,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 960022575}
+  - component: {fileID: 6039375158448095532}
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &960022575
+--- !u!4 &6039375158448095532
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ Transform:
   m_LocalPosition: {x: -2.028707, y: -2.037207, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 960022575}
+  - {fileID: 6039375158448095532}
   - {fileID: 500280379408248061}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -183,7 +183,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.026865289}
+  m_Offset: {x: 0.038250506, y: -0.026502132}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -194,7 +194,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3322035, y: 0.42113224}
+  m_Size: {x: 0.29129326, y: 0.42185855}
   m_EdgeRadius: 0
 --- !u!58 &1970065769194958511
 CircleCollider2D:
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 8
-  groundCheck: {fileID: 960022575}
+  groundCheck: {fileID: 6039375158448095532}
   damage: 5
   whatIsGround:
     serializedVersion: 2
