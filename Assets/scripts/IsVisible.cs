@@ -2,21 +2,20 @@
 
 public class IsVisible : MonoBehaviour
 {
-    Renderer m_Renderer;
+    Renderer Enemy;
     EnemiesRotate rotate;
     RangeAttack attack;
 
     void Start()
     {
-        m_Renderer = GetComponent<Renderer>();
+        Enemy = GetComponent<Renderer>();
         rotate = GetComponent<EnemiesRotate>();
         attack = GetComponent<RangeAttack>();
-
     }
 
     void Update()
     {
-        if (m_Renderer.isVisible)
+        if (Enemy.isVisible)
         {
             rotate.enabled = true;
             attack.enabled = true;

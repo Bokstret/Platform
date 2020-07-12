@@ -10,13 +10,13 @@ public class RangeAttack : MonoBehaviour
     Vector2 thrustDirection;
     float xEnemy;
     float yEnemy;
-    const float ThrustForce = 6;
+    const float ThrustForce = 100;
 
     void Start()
     {
         hero = GameObject.Find("Hero");
         timer = gameObject.AddComponent<Timer>();
-        timer.Duration = 1;
+        timer.Duration = 2;
         timer.Run();
     }
 
@@ -26,11 +26,11 @@ public class RangeAttack : MonoBehaviour
         {
             if (hero.transform.position.x < transform.position.x)
             {
-                thrustDirection = new Vector2(hero.transform.position.x - 3, hero.transform.position.y + 1);
+                thrustDirection = new Vector2(hero.transform.position.x - 2, hero.transform.position.y + 1);
             }
             else
             {
-                thrustDirection = new Vector2(hero.transform.position.x + 3, hero.transform.position.y + 1);
+                thrustDirection = new Vector2(hero.transform.position.x + 2, hero.transform.position.y + 1);
             }
             
             xEnemy = gameObject.transform.position.x;
@@ -38,9 +38,8 @@ public class RangeAttack : MonoBehaviour
             Vector3 location = new Vector3(xEnemy, yEnemy, 0);
             GameObject magic = Instantiate<GameObject>(prefabMagic, location, Quaternion.identity);
             Rigidbody2D rb2DB = magic.GetComponent<Rigidbody2D>();
-            rb2DB.AddForce(ThrustForce * (thrustDirection * 20), ForceMode2D.Force);
+            rb2DB.AddForce(ThrustForce * thrustDirection, ForceMode2D.Force);
             timer.Run();
-        }
-        
+        }  
     }
 }

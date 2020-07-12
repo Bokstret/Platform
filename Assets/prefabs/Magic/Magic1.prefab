@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8785763675356004929}
   - component: {fileID: 7084320144297871448}
   m_Layer: 11
-  m_Name: Magic
+  m_Name: Magic1
   m_TagString: Magic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,10 +96,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -143,3 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57d6609e66be8d4e9c27f654fb181e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5

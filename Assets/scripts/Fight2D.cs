@@ -45,30 +45,22 @@ public class Fight2D : MonoBehaviour
 				obj.GetComponent<Animator>().SetTrigger("Die");
 				Destroy(obj.GetComponent<EnemiesMovement>());
 				BoxCollider2D coll = obj.GetComponent<BoxCollider2D>();
-				if (obj.name != "hell gato")
+				if(obj.name == "skeleton clothed" | obj.name == "skeleton")
                 {
-					if(obj.name == "skeleton clothed" | obj.name == "skeleton")
-                    {
-						coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 3);
-					}
-
-					if(obj.name == "skeleton shield")
-                    {
-						coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 1.2f);
-						print(2);
-					}
-
-                    else
-                    {
-						coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 1.5f);
-					}
-					Destroy(obj, 1.5f);
-
+					coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 3);
 				}
-				
-            }
-	    }
+
+				if(obj.name == "skeleton shield")
+                {
+					coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 1.2f);
+				}
+
+                else
+                {
+					coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 1.5f);
+				}
+				Destroy(obj, 1.5f);
+			}	
+        }
 	}
-
-
 }
