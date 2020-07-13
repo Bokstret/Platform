@@ -122,7 +122,7 @@ public class HeroController : MonoBehaviour
 
     public static void InvulnerabilityOff()
     {
-        Physics2D.IgnoreLayerCollision(9, 10, false);
+        Physics2D.IgnoreLayerCollision(10, 9, false);
         Physics2D.IgnoreLayerCollision(10, 11, false);
         invulnerability = false;
         blink = false;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class ButtonsLevel : MonoBehaviour
 {
@@ -34,11 +35,9 @@ public class ButtonsLevel : MonoBehaviour
         no.SetActive(false);
         exit.SetActive(false);
         restart.SetActive(false);
-        pause.SetActive(false);
         resume.SetActive(false);
         next.SetActive(false);
-
-       
+        menu.SetActive(false);       
     }
 
     public void PausePressed()
@@ -90,4 +89,17 @@ public class ButtonsLevel : MonoBehaviour
         resume.SetActive(true);
     }
 
+    public void NextPressed()
+    {
+        if (SceneManager.GetActiveScene().name.Length == 6)
+        {
+            SceneManager.LoadScene(int.Parse(SceneManager.GetActiveScene().name[5].ToString()) + 2);
+        }
+        else
+        {
+            string lvl = SceneManager.GetActiveScene().name[5].ToString() + SceneManager.GetActiveScene().name[6].ToString();
+            SceneManager.LoadScene(int.Parse(lvl) + 2);
+        }
+        
+    }
 }
