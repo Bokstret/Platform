@@ -91,15 +91,6 @@ public class ButtonsLevel : MonoBehaviour
 
     public void NextPressed()
     {
-        if (SceneManager.GetActiveScene().name.Length == 6)
-        {
-            SceneManager.LoadScene(int.Parse(SceneManager.GetActiveScene().name[5].ToString()) + 2);
-        }
-        else
-        {
-            string lvl = SceneManager.GetActiveScene().name[5].ToString() + SceneManager.GetActiveScene().name[6].ToString();
-            SceneManager.LoadScene(int.Parse(lvl) + 2);
-        }
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
