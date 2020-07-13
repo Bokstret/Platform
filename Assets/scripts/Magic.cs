@@ -42,7 +42,6 @@ public class Magic : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Hero") & HeroController.invulnerability == false)
         {
-            print(1);
             hero.GetComponent<HP>().health -= 5;
             HeroController.InvulnerabilityOn();
             if (hero.GetComponent<HP>().health == 0)
