@@ -42,13 +42,14 @@ public class Magic : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Hero") & HeroController.invulnerability == false)
         {
+            print(1);
             hero.GetComponent<HP>().health -= 5;
+            HeroController.InvulnerabilityOn();
             if (hero.GetComponent<HP>().health == 0)
             {
                 Destroy(hero);
                 //to do call lose function
             }
-            HeroController.InvulnerabilityOn();
         }
         if (coll.gameObject.CompareTag("Hero") | coll.gameObject.layer == 8)
         {

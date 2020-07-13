@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class HeroController : MonoBehaviour
 {
@@ -17,7 +18,16 @@ public class HeroController : MonoBehaviour
     public float attackRadius;
     public static Animator anim;
     public static bool invulnerability = false;
+    public static float blinkTime = 0.3f;
+    static bool blink = false;
+    static bool state = true;
+    static SpriteRenderer renderer;
+    static HeroController instance;
 
+    void Awake()
+    {
+        instance = this; 
+    }
 
     void Start()
     {
@@ -26,7 +36,9 @@ public class HeroController : MonoBehaviour
 
         timer = gameObject.AddComponent<Timer>();
         timer.Duration = 2;
+
         anim = GetComponent<Animator>();
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
@@ -56,6 +68,7 @@ public class HeroController : MonoBehaviour
         {
             anim.SetBool("IsHurt", false);
         }
+
 
     }
 
@@ -97,17 +110,25 @@ public class HeroController : MonoBehaviour
     }
     public static void InvulnerabilityOn()
     {
-        Physics2D.IgnoreLayerCollision(9, 10, true);
+        Physics2D.IgnoreLayerCollision(10, 9, true);
+        Physics2D.IgnoreLayerCollision(10, 11, true);
         invulnerability = true;
+        blink = true;
         anim.SetBool("IsHurt", true);
         resetAnim.Run();
         timer.Run();
+        instance.StartCoroutine(Blink());
     }
 
     public static void InvulnerabilityOff()
     {
         Physics2D.IgnoreLayerCollision(9, 10, false);
+        Physics2D.IgnoreLayerCollision(10, 11, false);
         invulnerability = false;
+        blink = false;
+        renderer.enabled = true;
+        state = true;
+        instance.StopAllCoroutines();
     }
 
     private void NoAttack()
@@ -128,4 +149,13 @@ public class HeroController : MonoBehaviour
         transform.localScale = theScale;
     }
 
+    private static IEnumerator Blink()
+    {
+        while (blink)
+        {
+            state = !state;
+            renderer.enabled = state;
+            yield return new WaitForSeconds(blinkTime); 
+        }
+    }
 }

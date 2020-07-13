@@ -16,7 +16,7 @@ public class RangeAttack : MonoBehaviour
     {
         hero = GameObject.Find("Hero");
         timer = gameObject.AddComponent<Timer>();
-        timer.Duration = 2;
+        timer.Duration = 1;
         timer.Run();
     }
 
