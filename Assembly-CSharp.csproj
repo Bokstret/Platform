@@ -66,6 +66,7 @@
     <Compile Include="Assets\scripts\ButtonsChoose.cs" />
     <Compile Include="Assets\scripts\ButtonsLevel.cs" />
     <Compile Include="Assets\scripts\ButtonsMenu.cs" />
+    <Compile Include="Assets\scripts\CameraController.cs" />
     <Compile Include="Assets\scripts\CameraDrag.cs" />
     <Compile Include="Assets\scripts\Dialogue.cs" />
     <Compile Include="Assets\scripts\DialogueManager.cs" />
