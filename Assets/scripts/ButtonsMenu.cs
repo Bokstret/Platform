@@ -35,7 +35,12 @@ public class ButtonsMenu: MonoBehaviour
 
     public void PlayPressed()
     {
-        SceneManager.LoadScene("ChooseLevel");
+        SceneChange.sceneId = 1;
+        SceneChange.sceneEnd = true;
+        SceneChange.sceneStarting = false;
+        soundOn.SetActive(false);
+        soundOff.SetActive(false);
+        play.SetActive(false);
     }
 
 

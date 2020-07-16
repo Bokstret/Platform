@@ -4,19 +4,25 @@ using UnityEngine.SceneManagement;
 public class ButtonsChoose : MonoBehaviour
 {
 
-    GameObject back;
+    GameObject buttons;
     void Start()
     {
-        back = GameObject.Find("Back");
+        buttons = GameObject.Find("BUTTONS CHOOSE");
     }
 
     public void BackPressed()
     {
-        SceneManager.LoadScene(0);
+        buttons.SetActive(false);
+        SceneChange.sceneId = 0;
+        SceneChange.sceneEnd = true;
+        SceneChange.sceneStarting = false;
     }
 
     public void Load(int levelNumber)
     {
-        SceneManager.LoadScene(levelNumber);
+        buttons.SetActive(false);
+        SceneChange.sceneId = levelNumber;
+        SceneChange.sceneEnd = true;
+        SceneChange.sceneStarting = false;
     }
 }

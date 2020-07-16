@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
+using UnityEngine.UI;
 
 public class ButtonsLevel : MonoBehaviour
 {
+    Timer timer;
     GameObject HUD;
+    GameObject buttons;
     GameObject yes;
     GameObject no;
     GameObject exit;
@@ -19,8 +18,12 @@ public class ButtonsLevel : MonoBehaviour
     Text sure;
 
     void Start()
-    { 
+    {
+        timer = gameObject.AddComponent<Timer>();
+        timer.Duration = 1.5f;
+
         HUD = GameObject.Find("HUD");
+        buttons = GameObject.Find("BUTTONS LEVEL");
         yes = GameObject.Find("Yes");
         no = GameObject.Find("No");
         exit = GameObject.Find("Exit");
@@ -38,6 +41,15 @@ public class ButtonsLevel : MonoBehaviour
         resume.SetActive(false);
         next.SetActive(false);
         menu.SetActive(false);       
+    }
+
+    void Update()
+    {
+        if (timer.Finished)
+        {
+            HUD.SetActive(true);
+            pause.SetActive(true);
+        }
     }
 
     public void PausePressed()
@@ -61,7 +73,13 @@ public class ButtonsLevel : MonoBehaviour
 
     public void RestartPressed()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+        HUD.SetActive(false);
+        pause.SetActive(false);
+        timer.Run();
+        SceneChange.sceneId = SceneManager.GetActiveScene().buildIndex;
+        SceneChange.sceneEnd = true;
+        SceneChange.sceneStarting = false;
     }
 
     public void ExitPressed()
@@ -76,7 +94,12 @@ public class ButtonsLevel : MonoBehaviour
 
     public void YesPressed()
     {
-        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        HUD.SetActive(false);
+        buttons.SetActive(false);
+        SceneChange.sceneId = 1;
+        SceneChange.sceneEnd = true;
+        SceneChange.sceneStarting = false;
     }
 
     public void NoPressed()
@@ -91,6 +114,21 @@ public class ButtonsLevel : MonoBehaviour
 
     public void NextPressed()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1;
+        HUD.SetActive(false);
+        buttons.SetActive(false);
+        SceneChange.sceneId = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneChange.sceneEnd = true;
+        SceneChange.sceneStarting = false;
+    }
+
+    public void MenuPressed()
+    {
+        Time.timeScale = 1;
+        HUD.SetActive(false);
+        buttons.SetActive(false);
+        SceneChange.sceneId = 0;
+        SceneChange.sceneEnd = true;
+        SceneChange.sceneStarting = false;
     }
 }

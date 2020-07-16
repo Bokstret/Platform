@@ -118,7 +118,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
         m_MethodName: ResumePressed
         m_Mode: 1
         m_Arguments:
@@ -128,7 +129,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &6726082059148981318
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +248,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
         m_MethodName: ExitPressed
         m_Mode: 1
         m_Arguments:
@@ -483,7 +485,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
         m_MethodName: YesPressed
         m_Mode: 1
         m_Arguments:
@@ -493,7 +496,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &6726082059933288965
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +615,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
         m_MethodName: PausePressed
         m_Mode: 1
         m_Arguments:
@@ -622,7 +626,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &6726082059951111064
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,8 +745,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ExitPressed
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
+        m_MethodName: YesPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -751,7 +756,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &6726082060191737263
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +953,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
         m_MethodName: NoPressed
         m_Mode: 1
         m_Arguments:
@@ -958,7 +964,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &6726082060808893145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,8 +1083,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Jump
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
+        m_MethodName: RestartPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1087,7 +1094,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &6726082060826641239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,8 +1213,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Jump
+      - m_Target: {fileID: 7629987452382914854, guid: 86239de8ead092f4b8eed814db7d8127,
+          type: 3}
+        m_MethodName: NextPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1216,4 +1224,4 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
