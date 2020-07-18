@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Transactions;
+using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
     public float dumping = 1.5f;
-    private Vector2 offset = new Vector2(2f, 2f);
+    private Vector2 offset = new Vector2(2f, -1f);
     private bool isLeft;
     private Transform hero;
     private int lastX;
@@ -40,6 +41,11 @@ public class CameraController : MonoBehaviour
             }
             Vector3 currentPosition = Vector3.Lerp(transform.position, target, dumping * Time.deltaTime);
             transform.position = currentPosition;
+        }
+
+        if (transform.position.x < 0)
+        {
+            transform.position = new Vector3(0, hero.position.y + offset.y, transform.position.z);
         }
     }
 

@@ -238,7 +238,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1498302311, guid: 13519e1c9d5cc494a961f68796a421d7, type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: Move
           m_Mode: 3
           m_Arguments:
@@ -253,7 +253,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1498302311, guid: 13519e1c9d5cc494a961f68796a421d7, type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: Move
           m_Mode: 3
           m_Arguments:
@@ -396,11 +396,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 4
+  - eventID: 2
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1498302311, guid: 13519e1c9d5cc494a961f68796a421d7, type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: Attack
           m_Mode: 1
           m_Arguments:
@@ -547,7 +547,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1498302311, guid: 13519e1c9d5cc494a961f68796a421d7, type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: Move
           m_Mode: 3
           m_Arguments:
@@ -562,7 +562,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1498302311, guid: 13519e1c9d5cc494a961f68796a421d7, type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: Move
           m_Mode: 3
           m_Arguments:
@@ -705,11 +705,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 4
+  - eventID: 2
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1498302311, guid: 13519e1c9d5cc494a961f68796a421d7, type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: Jump
           m_Mode: 1
           m_Arguments:

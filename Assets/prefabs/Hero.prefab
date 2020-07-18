@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 1498302310}
   - component: {fileID: 1498302311}
   - component: {fileID: 1513335875}
+  - component: {fileID: 854626467}
   m_Layer: 10
   m_Name: Hero
   m_TagString: Hero
@@ -183,7 +184,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.016392887, y: -0.026502132}
+  m_Offset: {x: 0.05, y: -0.03406447}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -194,7 +195,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.30697715, y: 0.42185855}
+  m_Size: {x: 0.17, y: 0.43698323}
   m_EdgeRadius: 0
 --- !u!58 &1970065769194958511
 CircleCollider2D:
@@ -244,6 +245,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 8
+  whatIsDanger:
+    serializedVersion: 2
+    m_Bits: 4096
   groundCheck: {fileID: 6039375158448095532}
   damage: 5
   whatIsGround:
@@ -264,3 +268,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 155
+--- !u!68 &854626467
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8647835109758580286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.032818317, y: -0.2981968}
+  - {x: -0.030265808, y: -0.29909587}
+  - {x: -0.029836655, y: -0.29762816}
+  - {x: 0.11478996, y: -0.2988484}
+  - {x: -0.0093278885, y: -0.2977661}

@@ -9,6 +9,8 @@ public class HeroController : MonoBehaviour
     private int move;
     public int playerSpeed;
     private bool isGrounded = false;
+    private bool inDanger = false;
+    public LayerMask whatIsDanger;
     public Transform groundCheck;
     public float damage;
     private float groundRadius = 0.2f;
@@ -39,10 +41,22 @@ public class HeroController : MonoBehaviour
 
         anim = GetComponent<Animator>();
         renderer = GetComponent<SpriteRenderer>();
+        transform.localScale = new Vector3(transform.localScale.x + 0.75f, transform.localScale.y + 0.75f, transform.localScale.z);
     }
 
     void FixedUpdate()
     {
+        inDanger = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);
+        if (inDanger & invulnerability == false)
+        {
+            GetComponent<HP>().health -= 5;
+            if (GetComponent<HP>().health == 0)
+            {
+                Destroy(gameObject);
+                //to do call lose function
+            }
+            InvulnerabilityOn();
+        }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("IsGrounded", isGrounded);
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
@@ -71,7 +85,6 @@ public class HeroController : MonoBehaviour
 
 
     }
-
 
     public void Jump()
     {
