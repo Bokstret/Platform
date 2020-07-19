@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HeroController : MonoBehaviour
 {
@@ -10,11 +11,14 @@ public class HeroController : MonoBehaviour
     public int playerSpeed;
     private bool isGrounded = false;
     private bool inDanger = false;
+    public static bool playing = true;
+    private bool isEnd = false;
     public LayerMask whatIsDanger;
     public Transform groundCheck;
     public float damage;
     private float groundRadius = 0.2f;
     public LayerMask whatIsGround;
+    public LayerMask whatIsExit;
     private bool isFacingRight = true;
     public Transform attack;
     public float attackRadius;
@@ -25,14 +29,19 @@ public class HeroController : MonoBehaviour
     static bool state = true;
     static SpriteRenderer renderer;
     static HeroController instance;
+    Button dialogue;
+    GameObject[] gameObjects;
 
     void Awake()
     {
         instance = this; 
+        dialogue = GameObject.Find("EndDialogue").GetComponent<Button>();
     }
 
     void Start()
     {
+        playing = true;
+
         resetAnim = gameObject.AddComponent<Timer>();
         resetAnim.Duration = 0.5f;
 
@@ -45,6 +54,25 @@ public class HeroController : MonoBehaviour
 
     void FixedUpdate()
     {
+        isEnd = Physics2D.OverlapCircle(attack.position, attackRadius, whatIsExit);
+        if (isEnd == true & playing == true)
+        {
+            dialogue.onClick.Invoke();
+            Physics2D.IgnoreLayerCollision(10, 9, true);
+            Physics2D.IgnoreLayerCollision(10, 11, true);
+            ButtonsLevel.HUD.SetActive(false);
+            playing = false;
+            gameObjects = FindObjectsOfType(typeof(GameObject)) as GameObject[];
+            foreach (GameObject obj in gameObjects)
+            {
+                if (obj.layer == 9)
+                {
+                    Destroy(obj);
+                }
+            }
+            move = 0;
+        }
+
         inDanger = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);
         if (inDanger & invulnerability == false)
         {

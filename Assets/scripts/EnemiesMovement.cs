@@ -22,18 +22,15 @@ public class EnemiesMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name != "Rise")
+        if (timer.Finished)
         {
-            if (timer.Finished)
-            {
-                move *= -1;
-                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-                timer.Run();
-            }
-            Vector3 target = new Vector3(transform.position.x + move, transform.position.y, transform.position.z);
-            float step = Speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target, step);
+            move *= -1;
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            timer.Run();
         }
+        Vector3 target = new Vector3(transform.position.x + move, transform.position.y, transform.position.z);
+        float step = Speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target, step);
     }
 
     void OnCollisionEnter2D(Collision2D coll)

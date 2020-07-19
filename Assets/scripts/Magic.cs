@@ -14,6 +14,9 @@ public class Magic : MonoBehaviour
         hero = GameObject.Find("Hero");
         x = hero.transform.position.x;
         y = hero.transform.position.y - 1;
+        Vector3 difference = hero.transform.position - transform.position;
+        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         magicAlive = gameObject.AddComponent<Timer>();
         magicAlive.Duration = alive;
         magicAlive.Run();

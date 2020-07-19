@@ -5,17 +5,17 @@ using UnityEngine.UI;
 public class ButtonsLevel : MonoBehaviour
 {
     Timer timer;
-    GameObject HUD;
-    GameObject buttons;
-    GameObject yes;
-    GameObject no;
-    GameObject exit;
-    GameObject menu;
-    GameObject restart;
-    GameObject pause;
-    GameObject resume;
-    GameObject next;
-    Text sure;
+    public static GameObject HUD;
+    public static GameObject buttons;
+    public static GameObject yes;
+    public static GameObject no;
+    public static GameObject exit;
+    public static GameObject menu;
+    public static GameObject restart;
+    public static GameObject pause;
+    public static GameObject resume;
+    public static GameObject next;
+    public static Text sure;
 
     void Start()
     {
@@ -40,7 +40,9 @@ public class ButtonsLevel : MonoBehaviour
         restart.SetActive(false);
         resume.SetActive(false);
         next.SetActive(false);
-        menu.SetActive(false);       
+        menu.SetActive(false);
+        HUD.SetActive(false);
+        buttons.SetActive(false);
     }
 
     void Update()

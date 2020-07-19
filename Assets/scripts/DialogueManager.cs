@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+
 	public Text nameText;
 	public Text dialogueText;
 	public Animator anim;
 	private Queue<string> sentences;
 
-	void Start()
+    void Start()
 	{
 		sentences = new Queue<string>();
 	}
@@ -28,11 +29,25 @@ public class DialogueManager : MonoBehaviour
 		Invoke("DisplayNextSentence", 0.8f);
 	}
 
+
 	public void DisplayNextSentence()
 	{
 		if (sentences.Count == 0)
 		{
 			EndDialogue();
+			ButtonsLevel.buttons.SetActive(true);
+			if (HeroController.playing == true)
+            {
+				ButtonsLevel.HUD.SetActive(true);
+			}
+            else
+            {
+				Time.timeScale = 0;
+				ButtonsLevel.menu.SetActive(true);
+				ButtonsLevel.next.SetActive(true);
+				GameObject.Find("Dialogue").SetActive(false);
+            }
+
 			return;
 		}
 		string sentence = sentences.Dequeue();
@@ -53,5 +68,6 @@ public class DialogueManager : MonoBehaviour
 	void EndDialogue()
 	{
 		anim.SetBool("IsOpen", false);
+		GameObject.Find("DialogueText").GetComponent<Text>().text = "";
 	}
 }

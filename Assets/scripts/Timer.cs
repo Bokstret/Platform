@@ -24,6 +24,9 @@ public class Timer : MonoBehaviour
 	public bool Finished
 	{
 		get { return started && !running; }
+
+        set { running = value;
+			started = value;}
 	}
 
 	public bool Running
