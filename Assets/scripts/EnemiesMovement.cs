@@ -3,7 +3,7 @@
 public class EnemiesMovement : MonoBehaviour
 {
     Animator anim;
-    public int howLong = 2;
+    public float howLong = 2;
     public float Speed = 5f;
     private int move = -1;
     private float koef;
@@ -27,7 +27,7 @@ public class EnemiesMovement : MonoBehaviour
             if (timer.Finished)
             {
                 move *= -1;
-                transform.localScale = new Vector3(transform.localScale.x * -1, koef, 1);
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
                 timer.Run();
             }
             Vector3 target = new Vector3(transform.position.x + move, transform.position.y, transform.position.z);

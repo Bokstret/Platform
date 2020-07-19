@@ -41,7 +41,6 @@ public class HeroController : MonoBehaviour
 
         anim = GetComponent<Animator>();
         renderer = GetComponent<SpriteRenderer>();
-        transform.localScale = new Vector3(transform.localScale.x + 0.75f, transform.localScale.y + 0.75f, transform.localScale.z);
     }
 
     void FixedUpdate()
