@@ -43,7 +43,6 @@ public class ButtonsChoose : MonoBehaviour
 
             }
             
-
             if (PlayerPrefs.GetInt("Level" + i.ToString()) == 0)
             {
                 levels[i].GetComponent<Image>().enabled = false;
