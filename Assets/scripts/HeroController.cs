@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HeroController : MonoBehaviour
@@ -71,6 +72,7 @@ public class HeroController : MonoBehaviour
                 }
             }
             move = 0;
+
         }
 
         inDanger = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);

@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SerializableDictionary\Editor\SerializableDictionaryPropertyDrawer.cs" />
-    <Compile Include="Assets\SerializableDictionary\Example\Editor\UserSerializableDictionaryPropertyDrawers.cs" />
+    <Compile Include="Assets\PlayerPrefsEditor\Editor\Mac\Plist.cs" />
+    <Compile Include="Assets\PlayerPrefsEditor\Editor\PlayerPrefsEditor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -122,6 +122,7 @@ public class ButtonsLevel : MonoBehaviour
         SceneChange.sceneId = SceneManager.GetActiveScene().buildIndex + 1;
         SceneChange.sceneEnd = true;
         SceneChange.sceneStarting = false;
+        PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 2);
     }
 
     public void MenuPressed()
@@ -132,5 +133,7 @@ public class ButtonsLevel : MonoBehaviour
         SceneChange.sceneId = 0;
         SceneChange.sceneEnd = true;
         SceneChange.sceneStarting = false;
+        print(SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 2);
     }
 }

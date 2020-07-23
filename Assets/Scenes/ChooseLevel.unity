@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 12011636}
   - component: {fileID: 12011635}
   m_Layer: 5
-  m_Name: Level 18
-  m_TagString: Untagged
+  m_Name: Level 17
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -263,8 +263,8 @@ GameObject:
   - component: {fileID: 62292369}
   - component: {fileID: 62292368}
   m_Layer: 5
-  m_Name: Level 19
-  m_TagString: Untagged
+  m_Name: Level 18
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -281,7 +281,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -392,8 +392,8 @@ GameObject:
   - component: {fileID: 67919049}
   - component: {fileID: 67919048}
   m_Layer: 5
-  m_Name: Level 47
-  m_TagString: Untagged
+  m_Name: Level 46
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -410,7 +410,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -521,8 +521,8 @@ GameObject:
   - component: {fileID: 103276994}
   - component: {fileID: 103276993}
   m_Layer: 5
-  m_Name: Level 33
-  m_TagString: Untagged
+  m_Name: Level 32
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -539,7 +539,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -650,8 +650,8 @@ GameObject:
   - component: {fileID: 164437197}
   - component: {fileID: 164437196}
   m_Layer: 5
-  m_Name: Level 13
-  m_TagString: Untagged
+  m_Name: Level 12
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -668,7 +668,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -779,8 +779,8 @@ GameObject:
   - component: {fileID: 170432395}
   - component: {fileID: 170432394}
   m_Layer: 5
-  m_Name: Level 11
-  m_TagString: Untagged
+  m_Name: Level 10
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -797,7 +797,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -908,8 +908,8 @@ GameObject:
   - component: {fileID: 192369515}
   - component: {fileID: 192369514}
   m_Layer: 5
-  m_Name: Level 44
-  m_TagString: Untagged
+  m_Name: Level 43
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -926,7 +926,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 44
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1037,8 +1037,8 @@ GameObject:
   - component: {fileID: 209250755}
   - component: {fileID: 209250754}
   m_Layer: 5
-  m_Name: Level 43
-  m_TagString: Untagged
+  m_Name: Level 42
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1055,7 +1055,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 43
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1247,8 +1247,8 @@ GameObject:
   - component: {fileID: 248872285}
   - component: {fileID: 248872284}
   m_Layer: 5
-  m_Name: Level 48
-  m_TagString: Untagged
+  m_Name: Level 47
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1265,7 +1265,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1376,8 +1376,8 @@ GameObject:
   - component: {fileID: 276034845}
   - component: {fileID: 276034844}
   m_Layer: 5
-  m_Name: Level 22
-  m_TagString: Untagged
+  m_Name: Level 21
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1394,7 +1394,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1505,8 +1505,8 @@ GameObject:
   - component: {fileID: 298948682}
   - component: {fileID: 298948681}
   m_Layer: 5
-  m_Name: Level 8
-  m_TagString: Untagged
+  m_Name: Level 7
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1523,7 +1523,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1634,8 +1634,8 @@ GameObject:
   - component: {fileID: 304278973}
   - component: {fileID: 304278972}
   m_Layer: 5
-  m_Name: Level 42
-  m_TagString: Untagged
+  m_Name: Level 41
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1652,7 +1652,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 42
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1763,8 +1763,8 @@ GameObject:
   - component: {fileID: 348346150}
   - component: {fileID: 348346149}
   m_Layer: 5
-  m_Name: Level 30
-  m_TagString: Untagged
+  m_Name: Level 29
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1781,7 +1781,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2039,8 +2039,8 @@ GameObject:
   - component: {fileID: 493710687}
   - component: {fileID: 493710686}
   m_Layer: 5
-  m_Name: Level 32
-  m_TagString: Untagged
+  m_Name: Level 31
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2057,7 +2057,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2168,8 +2168,8 @@ GameObject:
   - component: {fileID: 499779845}
   - component: {fileID: 499779844}
   m_Layer: 5
-  m_Name: Level 25
-  m_TagString: Untagged
+  m_Name: Level 24
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2186,7 +2186,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2395,6 +2395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0da0c466e8793a44ac73c95383bf561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelDone: {fileID: 21300000, guid: ec0a274a5595e1d4792e4cfa5c489768, type: 3}
+  levels: []
 --- !u!82 &519420034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2517,8 +2519,8 @@ GameObject:
   - component: {fileID: 526192874}
   - component: {fileID: 526192873}
   m_Layer: 5
-  m_Name: Level 3
-  m_TagString: Untagged
+  m_Name: Level 2
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2535,7 +2537,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2646,8 +2648,8 @@ GameObject:
   - component: {fileID: 533389015}
   - component: {fileID: 533389014}
   m_Layer: 5
-  m_Name: Level 4
-  m_TagString: Untagged
+  m_Name: Level 3
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2664,7 +2666,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2856,8 +2858,8 @@ GameObject:
   - component: {fileID: 593236819}
   - component: {fileID: 593236818}
   m_Layer: 5
-  m_Name: Level 46
-  m_TagString: Untagged
+  m_Name: Level 45
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2874,7 +2876,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2985,8 +2987,8 @@ GameObject:
   - component: {fileID: 633149743}
   - component: {fileID: 633149742}
   m_Layer: 5
-  m_Name: Level 35
-  m_TagString: Untagged
+  m_Name: Level 34
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3003,7 +3005,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3114,8 +3116,8 @@ GameObject:
   - component: {fileID: 653887149}
   - component: {fileID: 653887148}
   m_Layer: 5
-  m_Name: Level 37
-  m_TagString: Untagged
+  m_Name: Level 36
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3132,7 +3134,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3445,8 +3447,8 @@ GameObject:
   - component: {fileID: 732003954}
   - component: {fileID: 732003953}
   m_Layer: 5
-  m_Name: Level 15
-  m_TagString: Untagged
+  m_Name: Level 14
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3463,7 +3465,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3574,8 +3576,8 @@ GameObject:
   - component: {fileID: 745657237}
   - component: {fileID: 745657236}
   m_Layer: 5
-  m_Name: Level 40
-  m_TagString: Untagged
+  m_Name: Level 39
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3592,7 +3594,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3703,8 +3705,8 @@ GameObject:
   - component: {fileID: 774327038}
   - component: {fileID: 774327037}
   m_Layer: 5
-  m_Name: Level 34
-  m_TagString: Untagged
+  m_Name: Level 33
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3721,7 +3723,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3832,8 +3834,8 @@ GameObject:
   - component: {fileID: 834302848}
   - component: {fileID: 834302847}
   m_Layer: 5
-  m_Name: Level 1
-  m_TagString: Untagged
+  m_Name: Level 0
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3850,7 +3852,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3961,8 +3963,8 @@ GameObject:
   - component: {fileID: 877711439}
   - component: {fileID: 877711438}
   m_Layer: 5
-  m_Name: Level 2
-  m_TagString: Untagged
+  m_Name: Level 1
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3979,7 +3981,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4090,8 +4092,8 @@ GameObject:
   - component: {fileID: 882884597}
   - component: {fileID: 882884596}
   m_Layer: 5
-  m_Name: Level 45
-  m_TagString: Untagged
+  m_Name: Level 44
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4108,7 +4110,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 45
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4219,8 +4221,8 @@ GameObject:
   - component: {fileID: 917546397}
   - component: {fileID: 917546396}
   m_Layer: 5
-  m_Name: Level 7
-  m_TagString: Untagged
+  m_Name: Level 6
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4237,7 +4239,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4362,15 +4364,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945125692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.38646618}
+  m_LocalScale: {x: 0.38646618, y: 0.38646618, z: 0.38646618}
   m_Children: []
-  m_Father: {fileID: 1811566581}
-  m_RootOrder: 0
+  m_Father: {fileID: 2040134145}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 63.200012, y: -54.69995}
+  m_AnchoredPosition: {x: 22, y: -22}
   m_SizeDelta: {x: 100, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &945125694
@@ -4477,8 +4479,8 @@ GameObject:
   - component: {fileID: 955151323}
   - component: {fileID: 955151322}
   m_Layer: 5
-  m_Name: Level 26
-  m_TagString: Untagged
+  m_Name: Level 25
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4495,7 +4497,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4606,8 +4608,8 @@ GameObject:
   - component: {fileID: 961723178}
   - component: {fileID: 961723177}
   m_Layer: 5
-  m_Name: Level 9
-  m_TagString: Untagged
+  m_Name: Level 8
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4624,7 +4626,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4816,8 +4818,8 @@ GameObject:
   - component: {fileID: 1031370941}
   - component: {fileID: 1031370940}
   m_Layer: 5
-  m_Name: Level 16
-  m_TagString: Untagged
+  m_Name: Level 15
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4834,7 +4836,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4945,8 +4947,8 @@ GameObject:
   - component: {fileID: 1048264071}
   - component: {fileID: 1048264070}
   m_Layer: 5
-  m_Name: Level 41
-  m_TagString: Untagged
+  m_Name: Level 40
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4963,7 +4965,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5074,8 +5076,8 @@ GameObject:
   - component: {fileID: 1053543525}
   - component: {fileID: 1053543524}
   m_Layer: 5
-  m_Name: Level 31
-  m_TagString: Untagged
+  m_Name: Level 30
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5092,7 +5094,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5203,8 +5205,8 @@ GameObject:
   - component: {fileID: 1091983237}
   - component: {fileID: 1091983236}
   m_Layer: 5
-  m_Name: Level 29
-  m_TagString: Untagged
+  m_Name: Level 28
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5221,7 +5223,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5332,8 +5334,8 @@ GameObject:
   - component: {fileID: 1118536011}
   - component: {fileID: 1118536010}
   m_Layer: 5
-  m_Name: Level 5
-  m_TagString: Untagged
+  m_Name: Level 4
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5350,7 +5352,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5461,8 +5463,8 @@ GameObject:
   - component: {fileID: 1169522280}
   - component: {fileID: 1169522279}
   m_Layer: 5
-  m_Name: Level 38
-  m_TagString: Untagged
+  m_Name: Level 37
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5479,7 +5481,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5671,8 +5673,8 @@ GameObject:
   - component: {fileID: 1201642634}
   - component: {fileID: 1201642633}
   m_Layer: 5
-  m_Name: Level 14
-  m_TagString: Untagged
+  m_Name: Level 13
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5689,7 +5691,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5800,8 +5802,8 @@ GameObject:
   - component: {fileID: 1208517292}
   - component: {fileID: 1208517291}
   m_Layer: 5
-  m_Name: Level 24
-  m_TagString: Untagged
+  m_Name: Level 23
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5818,7 +5820,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5929,8 +5931,8 @@ GameObject:
   - component: {fileID: 1218766269}
   - component: {fileID: 1218766268}
   m_Layer: 5
-  m_Name: Level 17
-  m_TagString: Untagged
+  m_Name: Level 16
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5947,7 +5949,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6058,8 +6060,8 @@ GameObject:
   - component: {fileID: 1259322192}
   - component: {fileID: 1259322191}
   m_Layer: 5
-  m_Name: Level 27
-  m_TagString: Untagged
+  m_Name: Level 26
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6076,7 +6078,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6268,8 +6270,8 @@ GameObject:
   - component: {fileID: 1276320736}
   - component: {fileID: 1276320735}
   m_Layer: 5
-  m_Name: Level 21
-  m_TagString: Untagged
+  m_Name: Level 20
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6286,7 +6288,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6478,8 +6480,8 @@ GameObject:
   - component: {fileID: 1319294054}
   - component: {fileID: 1319294053}
   m_Layer: 5
-  m_Name: Level 12
-  m_TagString: Untagged
+  m_Name: Level 11
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6496,7 +6498,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6607,8 +6609,8 @@ GameObject:
   - component: {fileID: 1425160382}
   - component: {fileID: 1425160381}
   m_Layer: 5
-  m_Name: Level 49
-  m_TagString: Untagged
+  m_Name: Level 48
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6625,7 +6627,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 49
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6817,8 +6819,8 @@ GameObject:
   - component: {fileID: 1710565498}
   - component: {fileID: 1710565497}
   m_Layer: 5
-  m_Name: Level 39
-  m_TagString: Untagged
+  m_Name: Level 38
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6835,7 +6837,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6946,8 +6948,8 @@ GameObject:
   - component: {fileID: 1807915564}
   - component: {fileID: 1807915563}
   m_Layer: 5
-  m_Name: Level 6
-  m_TagString: Untagged
+  m_Name: Level 5
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6964,7 +6966,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7152,7 +7154,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 945125693}
   - {fileID: 834302846}
   - {fileID: 877711437}
   - {fileID: 526192872}
@@ -7224,8 +7225,8 @@ GameObject:
   - component: {fileID: 1817614576}
   - component: {fileID: 1817614575}
   m_Layer: 5
-  m_Name: Level 36
-  m_TagString: Untagged
+  m_Name: Level 35
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7242,7 +7243,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7353,8 +7354,8 @@ GameObject:
   - component: {fileID: 1919659462}
   - component: {fileID: 1919659461}
   m_Layer: 5
-  m_Name: Level 50
-  m_TagString: Untagged
+  m_Name: Level 49
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7371,7 +7372,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 50
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7482,8 +7483,8 @@ GameObject:
   - component: {fileID: 1943239072}
   - component: {fileID: 1943239071}
   m_Layer: 5
-  m_Name: Level 28
-  m_TagString: Untagged
+  m_Name: Level 27
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7500,7 +7501,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7717,6 +7718,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbe98e2212304c648a6dd2b8ffa4b819, type: 3}
+--- !u!224 &2040134145 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1579894508352292841, guid: dbe98e2212304c648a6dd2b8ffa4b819,
+    type: 3}
+  m_PrefabInstance: {fileID: 1952954233}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2093660993
 GameObject:
   m_ObjectHideFlags: 0
@@ -7730,8 +7737,8 @@ GameObject:
   - component: {fileID: 2093660996}
   - component: {fileID: 2093660995}
   m_Layer: 5
-  m_Name: Level 20
-  m_TagString: Untagged
+  m_Name: Level 19
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7748,7 +7755,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7859,8 +7866,8 @@ GameObject:
   - component: {fileID: 2097209668}
   - component: {fileID: 2097209667}
   m_Layer: 5
-  m_Name: Level 23
-  m_TagString: Untagged
+  m_Name: Level 22
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7877,7 +7884,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8069,8 +8076,8 @@ GameObject:
   - component: {fileID: 2125364430}
   - component: {fileID: 2125364429}
   m_Layer: 5
-  m_Name: Level 10
-  m_TagString: Untagged
+  m_Name: Level 9
+  m_TagString: ChooseLevelButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8087,7 +8094,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1811566581}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
