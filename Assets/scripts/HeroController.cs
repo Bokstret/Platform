@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -32,11 +33,15 @@ public class HeroController : MonoBehaviour
     static HeroController instance;
     Button dialogue;
     GameObject[] gameObjects;
+    static Image HP;
+    static public Sprite[] HPSpriteArray;
 
     void Awake()
     {
         instance = this; 
         dialogue = GameObject.Find("EndDialogue").GetComponent<Button>();
+        HP = GameObject.Find("HP").GetComponent<Image>();
+        HPSpriteArray = Resources.LoadAll<Sprite>("sprites/HP");
     }
 
     void Start()
@@ -51,6 +56,7 @@ public class HeroController : MonoBehaviour
 
         anim = GetComponent<Animator>();
         renderer = GetComponent<SpriteRenderer>();
+
     }
 
     void FixedUpdate()
@@ -78,13 +84,14 @@ public class HeroController : MonoBehaviour
         inDanger = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);
         if (inDanger & invulnerability == false)
         {
-            GetComponent<HP>().health -= 5;
+            GetComponent<HP>().health -= 10;
+            InvulnerabilityOn();
+            HPBarCheck();
             if (GetComponent<HP>().health == 0)
             {
                 Destroy(gameObject);
                 //to do call lose function
             }
-            InvulnerabilityOn();
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("IsGrounded", isGrounded);
@@ -153,7 +160,6 @@ public class HeroController : MonoBehaviour
     public static void InvulnerabilityOn()
     {
         Physics2D.IgnoreLayerCollision(10, 9, true);
-        Physics2D.IgnoreLayerCollision(10, 11, true);
         invulnerability = true;
         blink = true;
         anim.SetBool("IsHurt", true);
@@ -171,6 +177,17 @@ public class HeroController : MonoBehaviour
         renderer.enabled = true;
         state = true;
         instance.StopAllCoroutines();
+    }
+
+    public static void HPBarCheck()
+    {
+        foreach (Sprite spr in HPSpriteArray)
+        {
+            if("HP" + instance.GetComponent<HP>().health.ToString() == spr.name)
+            {
+                HP.sprite = spr;
+            }
+        }
     }
 
     private void NoAttack()

@@ -40,13 +40,14 @@ public class EnemiesMovement : MonoBehaviour
             anim.SetBool("Attacking", true);
             enabled = false;
             Invoke("ToIdle", 0.6f);
-            hero.GetComponent<HP>().health -= 5;
+            hero.GetComponent<HP>().health -= 10;
+            HeroController.InvulnerabilityOn();
+            HeroController.HPBarCheck();
             if (hero.GetComponent<HP>().health == 0)
             {
                 Destroy(hero);
                 //to do call lose function
             }
-            HeroController.InvulnerabilityOn();
         }
     }
     private void ToIdle()

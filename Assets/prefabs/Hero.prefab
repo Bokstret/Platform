@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9bb1df8dd30f4a4d9777fe1668986f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 155
+  health: 100
 --- !u!68 &854626467
 EdgeCollider2D:
   m_ObjectHideFlags: 0

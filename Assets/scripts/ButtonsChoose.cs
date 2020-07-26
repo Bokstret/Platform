@@ -32,7 +32,6 @@ public class ButtonsChoose : MonoBehaviour
 
         for (int i = 0; i < levels.Count; i++)
         {
-            print("Your level is level number " + i + " and it is " + PlayerPrefs.GetInt("Level" + i.ToString()));
             if (PlayerPrefs.GetInt("Level" + i.ToString()) == 2)
             {
                 levels[i].GetComponent<Image>().sprite = levelDone;
@@ -43,7 +42,6 @@ public class ButtonsChoose : MonoBehaviour
 
             }
             
-
             if (PlayerPrefs.GetInt("Level" + i.ToString()) == 0)
             {
                 levels[i].GetComponent<Image>().enabled = false;
