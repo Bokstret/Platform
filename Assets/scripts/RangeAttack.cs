@@ -24,15 +24,7 @@ public class RangeAttack : MonoBehaviour
     {
         if (timer.Finished)
         {
-            if (hero.transform.position.x < transform.position.x)
-            {
-                thrustDirection = new Vector2(hero.transform.position.x, hero.transform.position.y + 1);
-            }
-            else
-            {
-                thrustDirection = new Vector2(hero.transform.position.x, hero.transform.position.y + 1);
-            }
-            
+            thrustDirection = new Vector2(hero.transform.position.x, hero.transform.position.y + 1);
             xEnemy = gameObject.transform.position.x;
             yEnemy = gameObject.transform.position.y;
             Vector3 location = new Vector3(xEnemy, yEnemy, 0);

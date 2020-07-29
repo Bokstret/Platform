@@ -73,6 +73,7 @@
     <Compile Include="Assets\scripts\Dialogue.cs" />
     <Compile Include="Assets\scripts\DialogueManager.cs" />
     <Compile Include="Assets\scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\scripts\Elevator.cs" />
     <Compile Include="Assets\scripts\EnemiesAppear.cs" />
     <Compile Include="Assets\scripts\EnemiesMovement.cs" />
     <Compile Include="Assets\scripts\EnemiesRotate.cs" />

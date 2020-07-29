@@ -14,7 +14,15 @@ public class Magic : MonoBehaviour
     void Start()
     {
         hero = GameObject.Find("Hero");
-        x = hero.transform.position.x + 5;
+        if (hero.transform.position.x < transform.position.x)
+        {
+            x = hero.transform.position.x - 5;
+        }
+        else
+        {
+            x = hero.transform.position.x + 5;
+        }
+
         y = hero.transform.position.y;
         Vector3 difference = hero.transform.position - transform.position;
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
