@@ -42,11 +42,6 @@ public class CameraController : MonoBehaviour
             Vector3 currentPosition = Vector3.Lerp(transform.position, target, dumping * Time.deltaTime);
             transform.position = currentPosition;
         }
-
-        if (transform.position.x < 0)
-        {
-            transform.position = new Vector3(0, hero.position.y + offset.y, transform.position.z);
-        }
     }
 
     public void FindPlayer(bool playerIsLeft)

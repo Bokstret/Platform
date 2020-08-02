@@ -5,7 +5,7 @@ using UnityEngine;
 public class Elevator : MonoBehaviour
 {
     [SerializeField]
-    private int duration;
+    private float duration;
     [SerializeField]
     private Vector3 velocity;
     Timer timer;

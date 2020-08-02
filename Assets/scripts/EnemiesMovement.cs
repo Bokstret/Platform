@@ -5,7 +5,7 @@ public class EnemiesMovement : MonoBehaviour
     Animator anim;
     public float howLong = 2;
     public float Speed = 5f;
-    private int move = -1;
+    public int move = -1;
     private float koef;
     GameObject hero;
     Timer timer;
