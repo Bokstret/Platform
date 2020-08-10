@@ -4925,6 +4925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 6520789236423922342, guid: 794e3f864deba634993ea9b403d8a1d5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6520789236485433824, guid: 794e3f864deba634993ea9b403d8a1d5,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -66881,6 +66886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BUTTONS LEVEL
       objectReference: {fileID: 0}
+    - target: {fileID: 6726082059456962076, guid: 32f22a5843630db44b16f067fcefbae0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6726082059638896389, guid: 32f22a5843630db44b16f067fcefbae0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -67152,6 +67162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160747288492, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3691524160747288496, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
