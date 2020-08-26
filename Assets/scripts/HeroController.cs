@@ -35,10 +35,12 @@ public class HeroController : MonoBehaviour
     GameObject[] gameObjects;
     static Image HP;
     static public Sprite[] HPSpriteArray;
+    private Rigidbody2D rb2D;
 
     void Awake()
     {
-        instance = this; 
+        instance = this;
+        rb2D = GetComponent<Rigidbody2D>();
         dialogue = GameObject.Find("EndDialogue").GetComponent<Button>();
         HP = GameObject.Find("HP").GetComponent<Image>();
         HPSpriteArray = Resources.LoadAll<Sprite>("sprites/HP");
@@ -95,9 +97,9 @@ public class HeroController : MonoBehaviour
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("IsGrounded", isGrounded);
-        anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
+        anim.SetFloat("vSpeed", rb2D.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(move));
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        rb2D.velocity = new Vector2(move * maxSpeed, rb2D.velocity.y);
 
         if (move > 0 && !isFacingRight)
         {
@@ -126,7 +128,7 @@ public class HeroController : MonoBehaviour
     {
         if (anim.GetBool("IsGrounded") == true)
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 650), ForceMode2D.Force);
+            rb2D.AddForce(new Vector2(0, 650), ForceMode2D.Force);
             anim.SetBool("IsGrounded", false);
             Invoke("ToIdle", 0.05f);
         }   

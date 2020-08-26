@@ -47,7 +47,7 @@ public class Fight2D : MonoBehaviour
 				BoxCollider2D coll = obj.GetComponent<BoxCollider2D>();
 				if(obj.name == "skeleton clothed" | obj.name == "skeleton")
                 {
-					coll.size = new Vector2(coll.size.x, coll.size.y - coll.size.y / 3);
+					coll.size = new Vector2(coll.size.x, coll.size.y * 2.5f);
 				}
 
 				if(obj.name == "skeleton shield")
