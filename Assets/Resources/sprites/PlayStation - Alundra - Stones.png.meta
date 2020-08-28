@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 7b5ef7d7c3d5d9e4ebb73e8d72ec17b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1955170990248093293
+    second: PlayStation - Alundra - Stones_0
+  - first:
+      213: 1253277996994371806
+    second: PlayStation - Alundra - Stones_1
+  - first:
+      213: -6217556857051226055
+    second: PlayStation - Alundra - Stones_2
+  - first:
+      213: -6163739950078581228
+    second: PlayStation - Alundra - Stones_3
+  - first:
+      213: -5529250303392215163
+    second: PlayStation - Alundra - Stones_4
+  - first:
+      213: -3098491890196036205
+    second: PlayStation - Alundra - Stones_5
+  - first:
+      213: -8877731846684146749
+    second: PlayStation - Alundra - Stones_6
+  - first:
+      213: 4813271612834969574
+    second: PlayStation - Alundra - Stones_7
+  - first:
+      213: -1772624127439863032
+    second: PlayStation - Alundra - Stones_8
+  - first:
+      213: -6462645426330774276
+    second: PlayStation - Alundra - Stones_9
+  - first:
+      213: -4029462819933044099
+    second: PlayStation - Alundra - Stones_10
+  - first:
+      213: -2286192783212670614
+    second: PlayStation - Alundra - Stones_11
+  - first:
+      213: -8503881486825313
+    second: PlayStation - Alundra - Stones_12
+  - first:
+      213: -5184652063319372812
+    second: PlayStation - Alundra - Stones_13
+  - first:
+      213: 3776226859625674742
+    second: PlayStation - Alundra - Stones_14
+  - first:
+      213: 4017094116595284899
+    second: PlayStation - Alundra - Stones_15
+  - first:
+      213: -5205089792920640704
+    second: PlayStation - Alundra - Stones_16
+  - first:
+      213: -2180934373209922246
+    second: PlayStation - Alundra - Stones_17
+  - first:
+      213: 4235954134193596334
+    second: PlayStation - Alundra - Stones_18
+  - first:
+      213: -7934593183286033813
+    second: PlayStation - Alundra - Stones_19
+  - first:
+      213: -8719439655878924497
+    second: PlayStation - Alundra - Stones_20
+  - first:
+      213: -4178153781689754257
+    second: PlayStation - Alundra - Stones_21
+  - first:
+      213: 7946114386729739665
+    second: PlayStation - Alundra - Stones_22
+  - first:
+      213: -2483671612492401811
+    second: PlayStation - Alundra - Stones_23
+  - first:
+      213: -6441512115107799279
+    second: PlayStation - Alundra - Stones_24
+  - first:
+      213: -8821314063734469849
+    second: PlayStation - Alundra - Stones_25
+  - first:
+      213: -7656888133415354191
+    second: PlayStation - Alundra - Stones_26
+  - first:
+      213: 6534937450756242588
+    second: PlayStation - Alundra - Stones_27
+  - first:
+      213: 3768583022547308816
+    second: PlayStation - Alundra - Stones_28
+  - first:
+      213: 28311988204573700
+    second: PlayStation - Alundra - Stones_29
+  - first:
+      213: -215189620870788911
+    second: PlayStation - Alundra - Stones_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 239
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66e2ec18a9222b10800000000000000
+      internalID: 1955170990248093293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 240
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0a9a7b2b9846110800000000000000
+      internalID: 1253277996994371806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 241
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930eaa40bfcc6b9a0800000000000000
+      internalID: -6217556857051226055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 241
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416aeab1c2ff57aa0800000000000000
+      internalID: -6163739950078581228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 237
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f0610f4282443b0800000000000000
+      internalID: -5529250303392215163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 242
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395cf69da02fff4d0800000000000000
+      internalID: -3098491890196036205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 241
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c30833fbe5fbc480800000000000000
+      internalID: -8877731846684146749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_7
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 241
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7ff72b70d2cc240800000000000000
+      internalID: 4813271612834969574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_8
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 241
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80309a37fbf5667e0800000000000000
+      internalID: -1772624127439863032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 171
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4504ea9321056a0800000000000000
+      internalID: -6462645426330774276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 163
+        width: 77
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d724f3e0ae87418c0800000000000000
+      internalID: -4029462819933044099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 166
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a611c84c6cfc540e0800000000000000
+      internalID: -2286192783212670614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_12
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 171
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9804ccc3c9c1eff0800000000000000
+      internalID: -8503881486825313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_13
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 173
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb4ad9fa6a6c08b0800000000000000
+      internalID: -5184652063319372812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_14
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 173
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7f64f425ad76430800000000000000
+      internalID: 3776226859625674742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_15
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 174
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab39f8c0d59fb730800000000000000
+      internalID: 4017094116595284899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_16
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 172
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04324fc396ec3c7b0800000000000000
+      internalID: -5205089792920640704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 116
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35226e1eb3cbb1e0800000000000000
+      internalID: -2180934373209922246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 116
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7e47d87d129ca30800000000000000
+      internalID: 4235954134193596334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 138
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6200010a89a2e190800000000000000
+      internalID: -7934593183286033813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_20
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 118
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27e1ee94d35ef680800000000000000
+      internalID: -8719439655878924497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 100
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d5d69b5473406c0800000000000000
+      internalID: -4178153781689754257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195a5a53fe4464e60800000000000000
+      internalID: 7946114386729739665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_23
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 90
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d633ba6d3d9388dd0800000000000000
+      internalID: -2483671612492401811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_24
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 108
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fdf922cd62b96a0800000000000000
+      internalID: -6441512115107799279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_25
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 91
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b03faa895649580800000000000000
+      internalID: -8821314063734469849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 109
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0cfd28fc44db590800000000000000
+      internalID: -7656888133415354191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_27
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 113
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cf8b5ecf2c0ba50800000000000000
+      internalID: 6534937450756242588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_28
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 49
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011108dca42bc4430800000000000000
+      internalID: 3768583022547308816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_29
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 45
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40491df6a95946000800000000000000
+      internalID: 28311988204573700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation - Alundra - Stones_30
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 5
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d845a01e2e730df0800000000000000
+      internalID: -215189620870788911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

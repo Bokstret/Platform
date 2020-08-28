@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-
+	StoneFall script;
 	public Text nameText;
 	public Text dialogueText;
 	public Animator anim;
@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
 	{
+		script = GameObject.Find("Main Camera").GetComponent<StoneFall>();
 		sentences = new Queue<string>();
 	}
 
@@ -21,7 +22,10 @@ public class DialogueManager : MonoBehaviour
 		anim.SetBool("IsOpen", true);
 		nameText.text = dialogue.name;
 		sentences.Clear();
-
+		if (script)
+		{
+			script.enabled = false;
+		}
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
@@ -39,6 +43,10 @@ public class DialogueManager : MonoBehaviour
 			if (HeroController.playing == true)
             {
 				ButtonsLevel.HUD.SetActive(true);
+				if (script)
+                {
+					script.enabled = true;
+				}
 			}
             else
             {
