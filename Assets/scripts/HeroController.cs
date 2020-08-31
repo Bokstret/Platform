@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HeroController : MonoBehaviour
 {
-    static Timer resetAnim;
+    static Timer attackPause;
     static Timer timer;
     private int maxSpeed = 7;
     private int move;
@@ -23,16 +23,13 @@ public class HeroController : MonoBehaviour
     public LayerMask whatIsExit;
     private bool isFacingRight = true;
     public Transform attack;
+    public Transform attack2;
     public float attackRadius;
     public static Animator anim;
     public static bool invulnerability = false;
-    public static float blinkTime = 0.3f;
-    static bool blink = false;
-    static bool state = true;
-    static SpriteRenderer renderer;
     static HeroController instance;
     Button dialogue;
-    GameObject[] gameObjects;
+    static GameObject[] gameObjects;
     static Image HP;
     static public Sprite[] HPSpriteArray;
     private Rigidbody2D rb2D;
@@ -50,14 +47,13 @@ public class HeroController : MonoBehaviour
     {
         playing = true;
 
-        resetAnim = gameObject.AddComponent<Timer>();
-        resetAnim.Duration = 0.5f;
+        attackPause = gameObject.AddComponent<Timer>();
+        attackPause.Duration = 1;
 
         timer = gameObject.AddComponent<Timer>();
-        timer.Duration = 2;
+        timer.Duration = 1;
 
         anim = GetComponent<Animator>();
-        renderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -91,8 +87,7 @@ public class HeroController : MonoBehaviour
             HPBarCheck();
             if (GetComponent<HP>().health == 0)
             {
-                Destroy(gameObject);
-                //to do call lose function
+                Death();
             }
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
@@ -115,13 +110,6 @@ public class HeroController : MonoBehaviour
         {
             InvulnerabilityOff();
         }
-
-        if(resetAnim.Finished)
-        {
-            anim.SetBool("IsHurt", false);
-        }
-
-
     }
 
     public void Jump()
@@ -130,7 +118,6 @@ public class HeroController : MonoBehaviour
         {
             rb2D.AddForce(new Vector2(0, 650), ForceMode2D.Force);
             anim.SetBool("IsGrounded", false);
-            Invoke("ToIdle", 0.05f);
         }   
     }
 
@@ -141,33 +128,29 @@ public class HeroController : MonoBehaviour
 
     public void Attack()
     {
-        if (anim.GetBool("IsAttack") == false & anim.GetBool("IsGrounded") == false)
+        int attackCheck = Random.Range(1, 3);
+        if (attackCheck == 1)
         {
-            anim.SetBool("IsAttack", true);
-            Fight2D.Action(attack.position, attackRadius, 9, damage);
-            anim.Play("Attack");
-            Invoke("NoAttack", 5);
+            anim.SetTrigger("IsAttack");
         }
-
         else
         {
-            anim.SetBool("IsAttack", true);
-            Fight2D.Action(attack.position, attackRadius, 9, damage);
-            anim.Play("Attack");
-            Invoke("NoAttack", 0.07f);
+            anim.SetTrigger("IsAttack2");
+        }
+        Fight2D.Action(attack.position, attackRadius, 9, damage);
+        if(Fight2D.obj == null)
+        {
+            Fight2D.Action(attack2.position, attackRadius, 9, damage);
         }
 
-        
     }
+
     public static void InvulnerabilityOn()
     {
         Physics2D.IgnoreLayerCollision(10, 9, true);
         invulnerability = true;
-        blink = true;
-        anim.SetBool("IsHurt", true);
-        resetAnim.Run();
+        anim.SetTrigger("IsHurt");
         timer.Run();
-        instance.StartCoroutine(Blink());
     }
 
     public static void InvulnerabilityOff()
@@ -175,10 +158,6 @@ public class HeroController : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 9, false);
         Physics2D.IgnoreLayerCollision(10, 11, false);
         invulnerability = false;
-        blink = false;
-        renderer.enabled = true;
-        state = true;
-        instance.StopAllCoroutines();
     }
 
     public static void HPBarCheck()
@@ -192,16 +171,6 @@ public class HeroController : MonoBehaviour
         }
     }
 
-    private void NoAttack()
-    {
-        anim.SetBool("IsAttack", false);
-    }
-
-    private void ToIdle()
-    {
-        anim.Play("Idle");
-    }
-
     private void Flip()
     {
         isFacingRight = !isFacingRight;
@@ -209,14 +178,23 @@ public class HeroController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-
-    private static IEnumerator Blink()
+    
+    public static void Death()
     {
-        while (blink)
+        anim.SetTrigger("Dead");
+        gameObjects = FindObjectsOfType(typeof(GameObject)) as GameObject[];
+        foreach (GameObject obj in gameObjects)
         {
-            state = !state;
-            renderer.enabled = state;
-            yield return new WaitForSeconds(blinkTime); 
+            if (obj.layer == 9)
+            {
+                Destroy(obj);
+            }
         }
+        ButtonsLevel.HUD.SetActive(false);
+        ButtonsLevel.resume.SetActive(false);
+        ButtonsLevel.pause.SetActive(false);
+        ButtonsLevel.restart.SetActive(true);
+        ButtonsLevel.menu.SetActive(true);
+
     }
 }

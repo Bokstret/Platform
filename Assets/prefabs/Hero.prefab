@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 500280379408248061}
   m_Layer: 0
   m_Name: AttackCheck
-  m_TagString: Untagged
+  m_TagString: NFS
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,11 +54,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2756635054882338451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.428, y: 0, z: -0.06911863}
+  m_LocalPosition: {x: 0.247, y: 0, z: -0.06911863}
   m_LocalScale: {x: 0.21599999, y: 0.21599999, z: 1}
   m_Children: []
   m_Father: {fileID: 8647835109758580284}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6606151721349381042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7277775560706314235}
+  m_Layer: 0
+  m_Name: AttackCheck2
+  m_TagString: NFS
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7277775560706314235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6606151721349381042}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.55, y: 0, z: -0.06911863}
+  m_LocalScale: {x: 0.21599999, y: 0.21599999, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8647835109758580284}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8647835109758580286
 GameObject:
@@ -97,6 +127,7 @@ Transform:
   m_Children:
   - {fileID: 6039375158448095532}
   - {fileID: 500280379408248061}
+  - {fileID: 7277775560706314235}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -139,7 +170,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e93c637a24e04d8ea6b2cfd9df53739, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: 0bd97e23f8b532a4f8969605a3b00a4e,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -184,18 +216,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.05, y: -0.03406447}
+  m_Offset: {x: 0.002383113, y: 0.022708893}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.59}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 0.59}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.43698323}
+  m_Size: {x: 0.26523376, y: 0.48459625}
   m_EdgeRadius: 0
 --- !u!58 &1970065769194958511
 CircleCollider2D:
@@ -210,9 +242,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32570383, y: 0}
+  m_Offset: {x: 0.43590546, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.3
 --- !u!95 &1498302310
 Animator:
   serializedVersion: 3
@@ -257,7 +289,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   attack: {fileID: 500280379408248061}
-  attackRadius: 0.15
+  attack2: {fileID: 7277775560706314235}
+  attackRadius: 0.3
 --- !u!114 &1513335875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,8 +320,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.001329422, y: -0.25358748}
-  - {x: 0.00437212, y: -0.25501132}
-  - {x: 0.012148857, y: -0.25354362}
-  - {x: 0.121613026, y: -0.2526647}
-  - {x: -0.014575958, y: -0.25315678}
+  - {x: 0.13499069, y: -0.22320938}
+  - {x: 0.13513184, y: -0.22241592}
+  - {x: 0.13513565, y: -0.22242737}
+  - {x: 0.103832245, y: -0.22340393}
+  - {x: -0.12977982, y: -0.22241592}

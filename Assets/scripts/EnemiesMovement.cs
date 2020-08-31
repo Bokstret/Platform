@@ -45,8 +45,7 @@ public class EnemiesMovement : MonoBehaviour
             HeroController.HPBarCheck();
             if (hero.GetComponent<HP>().health == 0)
             {
-                Destroy(hero);
-                //to do call lose function
+                HeroController.Death();
             }
         }
     }

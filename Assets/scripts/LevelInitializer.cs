@@ -45,6 +45,7 @@ public class LevelInitializer : MonoBehaviour
         if (timer.Finished)
         {
             timer.Finished = false;
+            HeroController.HPBarCheck();
             dialogue.onClick.Invoke();
         }
     }

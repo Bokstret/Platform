@@ -2,9 +2,10 @@
 using UnityEngine;
 
 public class Fight2D : MonoBehaviour
-{ 
+{
+	public static GameObject obj;
 
-    static GameObject NearTarget(Vector3 position, Collider2D[] array)
+	static GameObject NearTarget(Vector3 position, Collider2D[] array)
 	{
 		Collider2D current = null;
 		float dist = Mathf.Infinity;
@@ -27,7 +28,7 @@ public class Fight2D : MonoBehaviour
 	{
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(point, radius, 1 << layerMask);
 
-		GameObject obj = NearTarget(point, colliders);
+		obj = NearTarget(point, colliders);
 		if (obj != null && obj.GetComponent<HP>().enabled == true)
 		{
 			if(obj.GetComponent<HP>().health > 0)
