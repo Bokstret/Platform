@@ -48,13 +48,12 @@ public class HeroController : MonoBehaviour
         playing = true;
 
         attackPause = gameObject.AddComponent<Timer>();
-        attackPause.Duration = 1;
+        attackPause.Duration = 0.75f;
 
         timer = gameObject.AddComponent<Timer>();
         timer.Duration = 1;
 
         anim = GetComponent<Animator>();
-
     }
 
     void FixedUpdate()
@@ -76,7 +75,6 @@ public class HeroController : MonoBehaviour
                 }
             }
             move = 0;
-
         }
 
         inDanger = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);
@@ -110,6 +108,11 @@ public class HeroController : MonoBehaviour
         {
             InvulnerabilityOff();
         }
+
+        if (attackPause.Finished)
+        {
+            ButtonsLevel.attack.GetComponent<Button>().enabled = true;
+        }
     }
 
     public void Jump()
@@ -128,21 +131,25 @@ public class HeroController : MonoBehaviour
 
     public void Attack()
     {
-        int attackCheck = Random.Range(1, 3);
-        if (attackCheck == 1)
+        if (anim.GetBool("IsGrounded") == true)
         {
-            anim.SetTrigger("IsAttack");
+            int attackCheck = Random.Range(1, 3);
+            if (attackCheck == 1)
+            {
+                anim.SetTrigger("IsAttack");
+            }
+            else
+            {
+                anim.SetTrigger("IsAttack2");
+            }
+            Fight2D.Action(attack.position, attackRadius, 9, damage);
+            if (Fight2D.obj == null)
+            {
+                Fight2D.Action(attack2.position, attackRadius, 9, damage);
+            }
+            ButtonsLevel.attack.GetComponent<Button>().enabled = false;
+            attackPause.Run();
         }
-        else
-        {
-            anim.SetTrigger("IsAttack2");
-        }
-        Fight2D.Action(attack.position, attackRadius, 9, damage);
-        if(Fight2D.obj == null)
-        {
-            Fight2D.Action(attack2.position, attackRadius, 9, damage);
-        }
-
     }
 
     public static void InvulnerabilityOn()
@@ -195,6 +202,5 @@ public class HeroController : MonoBehaviour
         ButtonsLevel.pause.SetActive(false);
         ButtonsLevel.restart.SetActive(true);
         ButtonsLevel.menu.SetActive(true);
-
     }
 }
