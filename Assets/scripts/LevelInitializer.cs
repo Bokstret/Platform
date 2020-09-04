@@ -3,11 +3,13 @@ using UnityEngine.UI;
 
 public class LevelInitializer : MonoBehaviour
 {
+    public Transform music;
     Timer timer;
     GameObject BG;
     public static float koef;
     GameObject[] gameObjects;
     Button dialogue;
+    AudioSource audio;
 
     void Awake()
     {
@@ -25,6 +27,21 @@ public class LevelInitializer : MonoBehaviour
 
     void Start()
     {
+        if (!GameObject.Find("MusicLevel(Clone)"))
+        {
+            Instantiate(music);
+        }
+        audio = GameObject.Find("MusicLevel(Clone)").GetComponent<AudioSource>();
+
+        if (PlayerPrefs.GetInt("SoundOn") == 0)
+        {
+            audio.mute = true;
+        }
+        else
+        {
+            audio.mute = false;
+        }
+
         Physics2D.IgnoreLayerCollision(10, 9, false);
         Physics2D.IgnoreLayerCollision(10, 11, false);
         timer.Run();

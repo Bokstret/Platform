@@ -79,7 +79,7 @@ public class ButtonsLevel : MonoBehaviour
     {
         Time.timeScale = 1;
         HUD.SetActive(false);
-        pause.SetActive(false);
+        buttons.SetActive(false);
         timer.Run();
         SceneChange.sceneId = SceneManager.GetActiveScene().buildIndex;
         SceneChange.sceneEnd = true;
@@ -104,6 +104,7 @@ public class ButtonsLevel : MonoBehaviour
         SceneChange.sceneId = 1;
         SceneChange.sceneEnd = true;
         SceneChange.sceneStarting = false;
+        Destroy(GameObject.Find("MusicLevel(Clone)"));
     }
 
     public void NoPressed()
@@ -136,5 +137,6 @@ public class ButtonsLevel : MonoBehaviour
         SceneChange.sceneEnd = true;
         SceneChange.sceneStarting = false;
         PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 2);
+        Destroy(GameObject.Find("MusicLevel(Clone)"));
     }
 }

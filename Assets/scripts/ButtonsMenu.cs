@@ -9,25 +9,29 @@ public class ButtonsMenu: MonoBehaviour
     GameObject play;
     GameObject soundOff;
     GameObject soundOn;
+    public Transform music;
     AudioSource audio;
-    Scene choose;
 
     void Start()
     {
         soundOff = GameObject.Find("SoundOff");
         soundOn = GameObject.Find("SoundOn");
         play = GameObject.Find("Play");
-        audio = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+        if (!GameObject.Find("MusicMenu(Clone)"))
+        {
+            Instantiate(music);
+        }
+        audio = GameObject.Find("MusicMenu(Clone)").GetComponent<AudioSource>();
 
         if (PlayerPrefs.GetInt("SoundOn") == 0)
         {
-            audio.volume = 0;
+            audio.mute = true;
             soundOn.SetActive(true);
             soundOff.SetActive(false);
         }
         else
         {
-            audio.volume = 1;
+            audio.mute = false;
             soundOn.SetActive(false);
             soundOff.SetActive(true);
         }
@@ -48,7 +52,7 @@ public class ButtonsMenu: MonoBehaviour
     {
         soundOn.SetActive(true);
         soundOff.SetActive(false);
-        audio.volume = 0;
+        audio.mute = true;
         PlayerPrefs.SetInt("SoundOn", 0);
     }
 
@@ -56,7 +60,7 @@ public class ButtonsMenu: MonoBehaviour
     {
         soundOn.SetActive(false);
         soundOff.SetActive(true);
-        audio.volume = 1;
+        audio.mute = false;
         PlayerPrefs.SetInt("SoundOn", 1);
     }
 }

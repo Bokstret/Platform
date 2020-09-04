@@ -10,6 +10,8 @@ public class ButtonsChoose : MonoBehaviour
     public List<Transform> levels;
     GameObject buttons;
     GameObject back;
+    public Transform music;
+    AudioSource audio;
 
     void Start()
     {
@@ -46,8 +48,21 @@ public class ButtonsChoose : MonoBehaviour
             {
                 levels[i].GetComponent<Image>().enabled = false;
             }
+        }
 
+        if (!GameObject.Find("MusicMenu(Clone)"))
+        {
+            Instantiate(music);
+        }
+        audio = GameObject.Find("MusicMenu(Clone)").GetComponent<AudioSource>();
 
+        if (PlayerPrefs.GetInt("SoundOn") == 0)
+        {
+            audio.mute = true;
+        }
+        else
+        {
+            audio.mute = false;
         }
     }
 
@@ -67,5 +82,6 @@ public class ButtonsChoose : MonoBehaviour
         SceneChange.sceneId = levelNumber;
         SceneChange.sceneEnd = true;
         SceneChange.sceneStarting = false;
+        Destroy(GameObject.Find("MusicMenu(Clone)"));
     }
 }
