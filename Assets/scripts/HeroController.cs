@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -46,7 +47,9 @@ public class HeroController : MonoBehaviour
     void Start()
     {
         playing = true;
-
+        InvulnerabilityOff();
+        instance.enabled = true;
+        instance.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         attackPause = gameObject.AddComponent<Timer>();
         attackPause.Duration = 0.75f;
 
@@ -155,6 +158,7 @@ public class HeroController : MonoBehaviour
     public static void InvulnerabilityOn()
     {
         Physics2D.IgnoreLayerCollision(10, 9, true);
+        Physics2D.IgnoreLayerCollision(10, 11, true);
         invulnerability = true;
         anim.SetTrigger("IsHurt");
         timer.Run();
@@ -202,5 +206,7 @@ public class HeroController : MonoBehaviour
         ButtonsLevel.pause.SetActive(false);
         ButtonsLevel.restart.SetActive(true);
         ButtonsLevel.menu.SetActive(true);
+        instance.enabled = false;
+        instance.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }
 }
