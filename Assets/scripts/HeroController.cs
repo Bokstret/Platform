@@ -25,6 +25,8 @@ public class HeroController : MonoBehaviour
     private bool isFacingRight = true;
     public Transform attack;
     public Transform attack2;
+    public Transform attack3;
+    public Transform attack4;
     public float attackRadius;
     public static Animator anim;
     public static bool invulnerability = false;
@@ -145,11 +147,10 @@ public class HeroController : MonoBehaviour
             {
                 anim.SetTrigger("IsAttack2");
             }
-            Fight2D.Action(attack.position, attackRadius, 9, damage);
-            if (Fight2D.obj == null)
-            {
-                Fight2D.Action(attack2.position, attackRadius, 9, damage);
-            }
+            Fight.Hit(attack.position, attackRadius, 9, damage);
+            Fight.Hit(attack2.position, attackRadius, 9, damage);
+            Fight.Hit(attack3.position, attackRadius, 9, damage);
+            Fight.Hit(attack4.position, attackRadius, 9, damage);
             ButtonsLevel.attack.GetComponent<Button>().enabled = false;
             attackPause.Run();
         }

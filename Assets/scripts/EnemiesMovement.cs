@@ -41,6 +41,8 @@ public class EnemiesMovement : MonoBehaviour
             enabled = false;
             Invoke("ToIdle", 0.6f);
             hero.GetComponent<HP>().health -= 10;
+            move *= -1;
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             HeroController.InvulnerabilityOn();
             HeroController.HPBarCheck();
             if (hero.GetComponent<HP>().health == 0)
