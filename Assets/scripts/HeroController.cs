@@ -63,6 +63,18 @@ public class HeroController : MonoBehaviour
 
     void FixedUpdate()
     {
+        int getAxisHor = (int)Input.GetAxis("Horizontal");
+        if (getAxisHor != 0)
+        {
+            Move(getAxisHor);
+        }
+        else
+        {
+            Move(getAxisHor);
+        }
+
+
+
         isEnd = Physics2D.OverlapCircle(attack.position, attackRadius, whatIsExit);
         if (isEnd == true & playing == true)
         {
@@ -122,7 +134,7 @@ public class HeroController : MonoBehaviour
 
     public void Jump()
     {
-        if (anim.GetBool("IsGrounded") == true)
+        if (anim.GetBool("IsGrounded"))
         {
             rb2D.AddForce(new Vector2(0, 650), ForceMode2D.Force);
             anim.SetBool("IsGrounded", false);
