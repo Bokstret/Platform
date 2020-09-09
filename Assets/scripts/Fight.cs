@@ -12,7 +12,7 @@ public class Fight : MonoBehaviour
 		instance = this;
     }
 
-    static IEnumerator NoHP(GameObject enemy)
+    static IEnumerator Attack(GameObject enemy)
     {
 
 		enemy.GetComponent<HP>().enabled = false;
@@ -35,7 +35,7 @@ public class Fight : MonoBehaviour
                     {
 						hit.GetComponent<Animator>().SetTrigger("IsHurt");
 					}
-					instance.StartCoroutine(NoHP(hit.gameObject));
+					instance.StartCoroutine(Attack(hit.gameObject));
 				}
 
 				if (hit.GetComponent<HP>().health <= 0)
