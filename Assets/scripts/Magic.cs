@@ -8,19 +8,17 @@ public class Magic : MonoBehaviour
     public float speed = 5f;
     private float x;
     private float y;
-    Vector3 lastPos;
-    Vector3 currPos;
 
     void Start()
     {
         hero = GameObject.Find("Hero");
         if (hero.transform.position.x < transform.position.x)
         {
-            x = hero.transform.position.x - 5;
+            x = hero.transform.position.x - 50;
         }
         else
         {
-            x = hero.transform.position.x + 5;
+            x = hero.transform.position.x + 50;
         }
 
         y = hero.transform.position.y;
@@ -30,12 +28,10 @@ public class Magic : MonoBehaviour
         magicAlive = gameObject.AddComponent<Timer>();
         magicAlive.Duration = alive;
         magicAlive.Run();
-        lastPos = transform.position;
     }
 
     void Update()
     {
-        currPos = transform.position;
         if (magicAlive.Finished)
         {
             GameObject magic = GameObject.FindWithTag("Magic");
@@ -49,11 +45,6 @@ public class Magic : MonoBehaviour
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(x, y), step);
-            if(currPos == lastPos)
-            {
-                Destroy(gameObject);
-            }
-            lastPos = currPos;
         }
     }
 
