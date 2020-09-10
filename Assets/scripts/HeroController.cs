@@ -105,7 +105,7 @@ public class HeroController : MonoBehaviour
                 Death();
             }
         }
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround) ^ Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);
         anim.SetBool("IsGrounded", isGrounded);
         anim.SetFloat("vSpeed", rb2D.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(move));
