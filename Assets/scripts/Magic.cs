@@ -16,11 +16,11 @@ public class Magic : MonoBehaviour
         hero = GameObject.Find("Hero");
         if (hero.transform.position.x < transform.position.x)
         {
-            x = hero.transform.position.x - 5;
+            x = hero.transform.position.x - 50;
         }
         else
         {
-            x = hero.transform.position.x + 5;
+            x = hero.transform.position.x + 50;
         }
 
         y = hero.transform.position.y;
@@ -49,10 +49,10 @@ public class Magic : MonoBehaviour
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(x, y), step);
-            if(currPos == lastPos)
+            /*if(currPos == lastPos)
             {
-                Destroy(gameObject);
-            }
+                Destroy(gameObject); хуета не работает 
+            }*/
             lastPos = currPos;
         }
     }
