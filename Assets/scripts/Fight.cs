@@ -10,11 +10,11 @@ public class Fight : MonoBehaviour
     void Start()
     {
 		instance = this;
-    }
+	}
 
-    static IEnumerator Attack(GameObject enemy)
+
+    static IEnumerator Attack(Collider2D enemy)
     {
-
 		enemy.GetComponent<HP>().enabled = false;
 		yield return new WaitForSecondsRealtime(0.75f);
 		enemy.GetComponent<HP>().enabled = true;
@@ -32,11 +32,11 @@ public class Fight : MonoBehaviour
 				{
 					hit.GetComponent<HP>().health -= damage;
 					if (hit.GetComponent<HP>().health > 0)
-                    {
+					{
 						hit.GetComponent<Animator>().SetTrigger("IsHurt");
 					}
-					instance.StartCoroutine(Attack(hit.gameObject));
 				}
+				instance.StartCoroutine(Attack(hit));
 
 				if (hit.GetComponent<HP>().health <= 0)
 				{
