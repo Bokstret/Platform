@@ -6,15 +6,13 @@ public class RangeAttack : MonoBehaviour
     GameObject prefabMagic;
 
     Timer timer;
-    GameObject hero;
     float xEnemy;
     float yEnemy;
 
     void Start()
     {
-        hero = GameObject.Find("Hero");
         timer = gameObject.AddComponent<Timer>();
-        timer.Duration = 1;
+        timer.Duration = 2.5f;
         timer.Run();
     }
 

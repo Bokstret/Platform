@@ -4,7 +4,7 @@ public class Magic : MonoBehaviour
 {
     GameObject hero;
     Timer magicAlive;
-    const int alive = 3;
+    const int alive = 10;
     public float speed = 5f;
     private float x;
     private float y;
