@@ -6,7 +6,6 @@ public class EnemiesMovement : MonoBehaviour
     public float howLong = 2;
     public float Speed = 5f;
     public int move = -1;
-    private float koef;
     GameObject hero;
     Timer timer;
 
@@ -17,7 +16,6 @@ public class EnemiesMovement : MonoBehaviour
         timer.Run();
         anim = GetComponent<Animator>();
         hero = GameObject.Find("Hero");
-        koef = GameInitializer.koef;
     }
 
     void FixedUpdate()
@@ -25,7 +23,7 @@ public class EnemiesMovement : MonoBehaviour
         if (timer.Finished)
         {
             move *= -1;
-            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            gameObject.GetComponent<SpriteRenderer>().flipX = !gameObject.GetComponent<SpriteRenderer>().flipX;
             timer.Run();
         }
         Vector3 target = new Vector3(transform.position.x + move, transform.position.y, transform.position.z);
@@ -41,8 +39,7 @@ public class EnemiesMovement : MonoBehaviour
             enabled = false;
             Invoke("ToIdle", 0.6f);
             hero.GetComponent<HP>().health -= 10;
-            move *= -1;
-            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+
             HeroController.InvulnerabilityOn();
             HeroController.HPBarCheck();
             if (hero.GetComponent<HP>().health == 0)
@@ -55,5 +52,7 @@ public class EnemiesMovement : MonoBehaviour
     {
         enabled = true;
         anim.SetBool("Attacking", false);
+        gameObject.GetComponent<SpriteRenderer>().flipX = !gameObject.GetComponent<SpriteRenderer>().flipX;
+        move *= -1;
     }
 }

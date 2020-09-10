@@ -7,8 +7,11 @@ using UnityEngine.UI;
 
 public class HeroController : MonoBehaviour
 {
+    [SerializeField]
+    Transform[] attackList = new Transform[10];
+
     static Timer attackPause;
-    static Timer timer;
+    static Timer timerInv;
     private int maxSpeed = 7;
     private int move;
     public int playerSpeed;
@@ -24,9 +27,6 @@ public class HeroController : MonoBehaviour
     public LayerMask whatIsExit;
     private bool isFacingRight = true;
     public Transform attack;
-    public Transform attack2;
-    public Transform attack3;
-    public Transform attack4;
     public float attackRadius;
     public static Animator anim;
     public static bool invulnerability = false;
@@ -55,8 +55,8 @@ public class HeroController : MonoBehaviour
         attackPause = gameObject.AddComponent<Timer>();
         attackPause.Duration = 0.75f;
 
-        timer = gameObject.AddComponent<Timer>();
-        timer.Duration = 1;
+        timerInv = gameObject.AddComponent<Timer>();
+        timerInv.Duration = 1;
 
         anim = GetComponent<Animator>();
     }
@@ -121,7 +121,7 @@ public class HeroController : MonoBehaviour
             Flip();
         }
 
-        if (timer.Finished)
+        if (timerInv.Finished)
         {
             InvulnerabilityOff();
         }
@@ -159,12 +159,17 @@ public class HeroController : MonoBehaviour
             {
                 anim.SetTrigger("IsAttack2");
             }
-            Fight.Hit(attack.position, attackRadius, 9, damage);
-            Fight.Hit(attack2.position, attackRadius, 9, damage);
-            Fight.Hit(attack3.position, attackRadius, 9, damage);
-            Fight.Hit(attack4.position, attackRadius, 9, damage);
+            Invoke("DealDamage", 0.3f);
             ButtonsLevel.attack.GetComponent<Button>().enabled = false;
             attackPause.Run();
+        }
+    }
+
+    public void DealDamage()
+    {
+        foreach (Transform point in attackList)
+        {
+            Fight.Hit(point.position, attackRadius, 9, damage);
         }
     }
 
@@ -173,8 +178,11 @@ public class HeroController : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 9, true);
         Physics2D.IgnoreLayerCollision(10, 11, true);
         invulnerability = true;
-        anim.SetTrigger("IsHurt");
-        timer.Run();
+        if(anim.GetCurrentAnimatorClipInfo(0)[0].clip.name != "HeroAttack" & anim.GetCurrentAnimatorClipInfo(0)[0].clip.name != "HeroAttack2")
+        {
+            anim.SetTrigger("IsHurt");
+        }
+        timerInv.Run();
     }
 
     public static void InvulnerabilityOff()
