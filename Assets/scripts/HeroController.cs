@@ -105,7 +105,11 @@ public class HeroController : MonoBehaviour
                 Death();
             }
         }
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround) ^ Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        if (!isGrounded)
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsDanger);
+        }
         anim.SetBool("IsGrounded", isGrounded);
         anim.SetFloat("vSpeed", rb2D.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(move));
@@ -128,7 +132,7 @@ public class HeroController : MonoBehaviour
 
         if (attackPause.Finished)
         {
-            ButtonsLevel.attack.GetComponent<Button>().enabled = true;
+            ButtonsLevel.attack.GetComponent<Button>().interactable = true;
         }
     }
 
@@ -148,20 +152,23 @@ public class HeroController : MonoBehaviour
 
     public void Attack()
     {
-        if (anim.GetBool("IsGrounded") == true)
+        if (ButtonsLevel.attack.GetComponent<Button>().interactable)
         {
-            int attackCheck = Random.Range(1, 3);
-            if (attackCheck == 1)
+            if (anim.GetBool("IsGrounded") == true)
             {
-                anim.SetTrigger("IsAttack");
+                int attackCheck = Random.Range(1, 3);
+                if (attackCheck == 1)
+                {
+                    anim.SetTrigger("IsAttack");
+                }
+                else
+                {
+                    anim.SetTrigger("IsAttack2");
+                }
+                Invoke("DealDamage", 0.3f);
+                ButtonsLevel.attack.GetComponent<Button>().interactable = false;
+                attackPause.Run();
             }
-            else
-            {
-                anim.SetTrigger("IsAttack2");
-            }
-            Invoke("DealDamage", 0.3f);
-            ButtonsLevel.attack.GetComponent<Button>().enabled = false;
-            attackPause.Run();
         }
     }
 
