@@ -44,6 +44,10 @@ public class Fight : MonoBehaviour
 					{
 						Destroy(hit.GetComponent<EnemiesAppear>());
 					}
+					if (hit.GetComponent<RangeAttack>() != null)
+					{
+						Destroy(hit.GetComponent<RangeAttack>());
+					}
 					hit.GetComponent<HP>().enabled = false;
 					hit.GetComponent<Animator>().SetTrigger("Die");
 					Destroy(hit.GetComponent<EnemiesMovement>());

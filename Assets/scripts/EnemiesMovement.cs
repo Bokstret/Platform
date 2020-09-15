@@ -8,12 +8,16 @@ public class EnemiesMovement : MonoBehaviour
     public int move = -1;
     GameObject hero;
     Timer timer;
+    Timer attackPause;
 
     void Start()
     {
         timer = gameObject.AddComponent<Timer>();
         timer.Duration = howLong;
         timer.Run();
+        attackPause = gameObject.AddComponent<Timer>();
+        attackPause.Duration = 1.5f;
+        attackPause.Run();
         anim = GetComponent<Animator>();
         hero = GameObject.Find("Hero");
     }
@@ -33,18 +37,22 @@ public class EnemiesMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.CompareTag("Hero") & HeroController.invulnerability == false)
+        if (attackPause.Finished)
         {
-            anim.SetBool("Attacking", true);
-            enabled = false;
-            Invoke("ToIdle", 0.6f);
-            hero.GetComponent<HP>().health -= 10;
-
-            HeroController.InvulnerabilityOn();
-            HeroController.HPBarCheck();
-            if (hero.GetComponent<HP>().health == 0)
+            if (coll.gameObject.CompareTag("Hero") & HeroController.invulnerability == false)
             {
-                HeroController.Death();
+                anim.SetBool("Attacking", true);
+                enabled = false;
+                Invoke("ToIdle", 0.6f);
+                hero.GetComponent<HP>().health -= 10;
+
+                HeroController.InvulnerabilityOn();
+                HeroController.HPBarCheck();
+                if (hero.GetComponent<HP>().health == 0)
+                {
+                    HeroController.Death();
+                }
+                attackPause.Run();
             }
         }
     }
