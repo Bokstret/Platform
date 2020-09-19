@@ -45,7 +45,6 @@ public class EnemiesMovement : MonoBehaviour
                 enabled = false;
                 Invoke("ToIdle", 0.6f);
                 hero.GetComponent<HP>().health -= 10;
-
                 HeroController.InvulnerabilityOn();
                 HeroController.HPBarCheck();
                 if (hero.GetComponent<HP>().health == 0)

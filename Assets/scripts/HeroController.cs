@@ -10,6 +10,7 @@ public class HeroController : MonoBehaviour
     [SerializeField]
     Transform[] attackList = new Transform[10];
 
+    static Timer jumpPause;
     static Timer attackPause;
     static Timer timerInv;
     private int maxSpeed = 7;
@@ -52,8 +53,12 @@ public class HeroController : MonoBehaviour
         InvulnerabilityOff();
         instance.enabled = true;
         instance.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
         attackPause = gameObject.AddComponent<Timer>();
         attackPause.Duration = 0.75f;
+
+        jumpPause = gameObject.AddComponent<Timer>();
+        jumpPause.Duration = 0.5f;
 
         timerInv = gameObject.AddComponent<Timer>();
         timerInv.Duration = 1;
@@ -134,15 +139,24 @@ public class HeroController : MonoBehaviour
         {
             ButtonsLevel.attack.GetComponent<Button>().interactable = true;
         }
+        if (jumpPause.Finished)
+        {
+            ButtonsLevel.jump.GetComponent<Button>().interactable = true;
+        }
     }
 
     public void Jump()
     {
-        if (anim.GetBool("IsGrounded"))
+        if (ButtonsLevel.jump.GetComponent<Button>().interactable)
         {
-            rb2D.AddForce(new Vector2(0, 650), ForceMode2D.Force);
-            anim.SetBool("IsGrounded", false);
-        }   
+            if (anim.GetBool("IsGrounded"))
+            {
+                rb2D.AddForce(new Vector2(0, 650), ForceMode2D.Force);
+                anim.SetBool("IsGrounded", false);
+            }
+            ButtonsLevel.jump.GetComponent<Button>().interactable = false;
+            jumpPause.Run();
+        }
     }
 
     public void Move(int InputAxis)

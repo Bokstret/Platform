@@ -40,10 +40,6 @@ public class Fight : MonoBehaviour
 
 				if (hit.GetComponent<HP>().health <= 0)
 				{
-					if (hit.GetComponent<EnemiesAppear>() != null)
-					{
-						Destroy(hit.GetComponent<EnemiesAppear>());
-					}
 					if (hit.GetComponent<RangeAttack>() != null)
 					{
 						Destroy(hit.GetComponent<RangeAttack>());

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ButtonsLevel : MonoBehaviour
 {
     Timer timer;
+    public static GameObject jump;
     public static GameObject attack;
     public static GameObject HUD;
     public static GameObject buttons;
@@ -24,6 +25,7 @@ public class ButtonsLevel : MonoBehaviour
         timer.Duration = 1.5f;
 
         attack = GameObject.Find("Attack");
+        jump = GameObject.Find("ArrowJ");
         HUD = GameObject.Find("HUD");
         buttons = GameObject.Find("BUTTONS LEVEL");
         yes = GameObject.Find("Yes");
