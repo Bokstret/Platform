@@ -40970,7 +40970,7 @@ PrefabInstance:
     - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
@@ -41000,17 +41000,216 @@ PrefabInstance:
     - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: He told you that you were already here.
+      value: He thought you were one of them, but he was wrong.
       objectReference: {fileID: 0}
     - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
-      value: And it was you who gave the order to the bandits to set fire to the
-        village.
+      value: He asks you to help with the bandits in the village.
       objectReference: {fileID: 0}
     - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[5]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[8]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[9]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[10]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[11]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[12]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[13]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[14]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[15]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[16]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[17]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[18]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[19]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[20]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[21]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[22]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[23]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[24]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[25]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[26]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[27]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[28]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[29]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[30]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[31]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[32]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[33]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[34]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[35]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[36]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[37]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[38]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[39]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[40]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[41]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[42]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[43]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[44]
+      value: Or someone very similar to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[45]
       value: Or someone very similar to you.
       objectReference: {fileID: 0}
     - target: {fileID: 3691524160747288492, guid: 7d173beda9e2367419f0881d873b9353,
@@ -41146,7 +41345,7 @@ PrefabInstance:
     - target: {fileID: 5941860298714959804, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: But who is he?
+      value: But what's going on?
       objectReference: {fileID: 0}
     - target: {fileID: 5941860298714959804, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
@@ -41157,23 +41356,22 @@ PrefabInstance:
     - target: {fileID: 5941860298714959804, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: You have only one guess - an ancient spirit.
+      value: "You have only one guess - \rsource of evil nearby."
       objectReference: {fileID: 0}
     - target: {fileID: 5941860298714959804, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: A spirit that is mentioned in village legends, capable of taking on
-        someone else's guise.
+      value: A castle that is mentioned in village legends.
       objectReference: {fileID: 0}
     - target: {fileID: 5941860298714959804, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
-      value: And, most likely, you saw him in the mine.
+      value: A place where different monsters live.
       objectReference: {fileID: 0}
     - target: {fileID: 5941860298714959804, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[5]
-      value: You've seen your own silhouette!
+      value: By clearing this castle you will save this place.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d173beda9e2367419f0881d873b9353, type: 3}

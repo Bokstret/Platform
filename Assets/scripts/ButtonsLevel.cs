@@ -121,13 +121,21 @@ public class ButtonsLevel : MonoBehaviour
 
     public void NextPressed()
     {
-        Time.timeScale = 1;
-        HUD.SetActive(false);
-        buttons.SetActive(false);
-        SceneChange.sceneId = SceneManager.GetActiveScene().buildIndex + 1;
-        SceneChange.sceneEnd = true;
-        SceneChange.sceneStarting = false;
-        PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 2);
+        if(SceneManager.GetActiveScene().buildIndex == 11)
+        {
+            MenuPressed();
+        }
+        else
+        {
+            Time.timeScale = 1;
+            HUD.SetActive(false);
+            buttons.SetActive(false);
+            SceneChange.sceneId = SceneManager.GetActiveScene().buildIndex + 1;
+            SceneChange.sceneEnd = true;
+            SceneChange.sceneStarting = false;
+            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 2);
+        }
+
     }
 
     public void MenuPressed()

@@ -67195,6 +67195,11 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: Storyteller
       objectReference: {fileID: 0}
+    - target: {fileID: 5941860298714959804, guid: 7d173beda9e2367419f0881d873b9353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\rIn the tunnel you see a lot of enemies."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d173beda9e2367419f0881d873b9353, type: 3}
 --- !u!95 &2134045669 stripped

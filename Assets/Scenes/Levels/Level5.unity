@@ -36774,7 +36774,7 @@ PrefabInstance:
     - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: As you can see, she has been taken over by bandits.
+      value: As you can see, it has been taken over by bandits.
       objectReference: {fileID: 0}
     - target: {fileID: 3691524160697861647, guid: 7d173beda9e2367419f0881d873b9353,
         type: 3}
