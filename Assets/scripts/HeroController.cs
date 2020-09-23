@@ -68,18 +68,6 @@ public class HeroController : MonoBehaviour
 
     void FixedUpdate()
     {
-        int getAxisHor = (int)Input.GetAxis("Horizontal");
-        if (getAxisHor != 0)
-        {
-            Move(getAxisHor);
-        }
-        else
-        {
-            Move(getAxisHor);
-        }
-
-
-
         isEnd = Physics2D.OverlapCircle(attack.position, attackRadius, whatIsExit);
         if (isEnd == true & playing == true)
         {
