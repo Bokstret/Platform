@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
@@ -129,24 +129,24 @@ public class HeroController : MonoBehaviour
         {
             ButtonsLevel.attack.GetComponent<Button>().interactable = true;
         }
-        /*if (jumpPause.Finished)
+        if (jumpPause.Finished)
         {
             ButtonsLevel.jump.GetComponent<Button>().interactable = true;
-        }*/
+        }
     }
 
     public void Jump()
     {
-        //if (ButtonsLevel.jump.GetComponent<Button>().interactable)
-        //{
+        if (ButtonsLevel.jump.GetComponent<Button>().interactable)
+        {
             if (anim.GetBool("IsGrounded"))
             {
                 rb2D.AddForce(new Vector2(0, 650), ForceMode2D.Force);
                 anim.SetBool("IsGrounded", false);
             }
-            //ButtonsLevel.jump.GetComponent<Button>().interactable = false;
+            ButtonsLevel.jump.GetComponent<Button>().interactable = false;
             jumpPause.Run();
-        //}
+        }
     }
 
     public void Move(int InputAxis)
