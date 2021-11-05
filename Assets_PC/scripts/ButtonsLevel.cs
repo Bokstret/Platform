@@ -103,7 +103,7 @@ public class ButtonsLevel : MonoBehaviour
 
     public void ExitPressed()
     {
-        resume.SetActive(false);
+        //resume.SetActive(false);
         restart.SetActive(false);
         exit.SetActive(false);
         yes.SetActive(true);

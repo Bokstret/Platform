@@ -77,8 +77,15 @@ public class HeroController : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        Move((int)Input.GetAxis("Horizontal"));
+        if (GetComponent<HP>().health > 0)
+        {
+            Move((int)Input.GetAxis("Horizontal"));
+        }
+        else
+        {
+            Move(0);
+        }
+            
 
         isEnd = Physics2D.OverlapCircle(attack.position, attackRadius, whatIsExit);
         if (isEnd == true & playing == true)
@@ -244,8 +251,8 @@ public class HeroController : MonoBehaviour
             }
         }
         ButtonsLevel.HUD.SetActive(false);
-        ButtonsLevel.resume.SetActive(false);
-        ButtonsLevel.pause.SetActive(false);
+        //ButtonsLevel.resume.SetActive(false);
+        //ButtonsLevel.pause.SetActive(false);
         ButtonsLevel.restart.SetActive(true);
         ButtonsLevel.menu.SetActive(true);
         instance.enabled = false;
