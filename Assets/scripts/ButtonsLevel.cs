@@ -51,6 +51,19 @@ public class ButtonsLevel : MonoBehaviour
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Time.timeScale == 1)
+            {
+                PausePressed();
+            }
+            else
+            {
+                ResumePressed();
+            }
+            
+        }
         if (timer.Finished)
         {
             HUD.SetActive(true);

@@ -10,6 +10,7 @@ public class LevelInitializer : MonoBehaviour
     GameObject[] gameObjects;
     Button dialogue;
     AudioSource audio;
+    public Texture2D cursor;
 
     void Awake()
     {
@@ -27,6 +28,7 @@ public class LevelInitializer : MonoBehaviour
 
     void Start()
     {
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
         if (!GameObject.Find("MusicLevel(Clone)"))
         {
             Instantiate(music);

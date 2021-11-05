@@ -5,6 +5,7 @@ public class GameInitializer : MonoBehaviour
     GameObject BG;
     public static float koef;
     GameObject[] gameObjects;
+    public Texture2D cursor;
 
     void Awake()
     {
@@ -17,6 +18,7 @@ public class GameInitializer : MonoBehaviour
 
     void Start()
     {
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
         gameObjects = FindObjectsOfType(typeof(GameObject)) as GameObject[];
         foreach (GameObject obj in gameObjects)
         {
